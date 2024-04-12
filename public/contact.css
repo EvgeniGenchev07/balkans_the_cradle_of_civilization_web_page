@@ -18,25 +18,21 @@ body {
   box-sizing: border-box;
 }
 .contact-section {
-    display: flex;
+  position: absolute;
+  background-color: #c8e7d8;
+    display: absolute;
     justify-content: space-around;
     align-items: center;
-    margin: 50px auto;
 }
-
+.contact-form{
+  background-color: #ffffff;
+  display: absolute;
+}
 .contact-info {
     flex-basis: 45%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #c8e7d8;
-  color: #4e5e72;
-  text-align: center;
-  font-family: monospace;
-  overflow: hidden;
-}
+
 h1, p {
   margin: 0;
   padding: 0;
@@ -195,6 +191,8 @@ textarea:focus {
   }
   & .envelope {
     animation: fadeInEnvelope 0.5s 1.33s forwards ease-out;
+    padding: 0;
+    background-color: #c8e7d8;
   }
   & .result-message {
     opacity: 1;
