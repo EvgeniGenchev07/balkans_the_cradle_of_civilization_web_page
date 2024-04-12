@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>CodePen - 3D Website Rotate </title>
   <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -21,40 +21,108 @@
 </header>
 <div id="wrap">
   <div class="cube">
+    <!--Article-->
     <section class="page active face front" id="home">
       <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">Home Page</div>
+        <div class="act-table-cell ver-middle">
+          Home Page
+          
+        </div>
       </div>
+      <main-footer></main-footer>
     </section>
+    <!--Article-->
     <section class="page face back" id="portfolio">
       <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">Portfolio Page</div>
+        <div class="act-table-cell ver-middle">Portfolio Page
+        </div>
       </div>
+      <main-footer></main-footer>
     </section>
+   
+    <!--Article-->
     <section class="page face top" id="about">
       <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">about Page</div>
+        <div class="act-table-cell ver-middle">about Page
+        </div>
       </div>
+      <main-footer></main-footer>
     </section>
+    <!--Contact-->
     <section class="page face right" id="contact">
       <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">contact Page</div>
+        <div class="act-table-cell-ver-middle">
+          <div class="contact-form">
+
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have any questions or inquiries? Feel free to contact us using the form below or through our email.</p>
+                <p>Email: contact@prehistoricadventures.com</p>
+            </div>
+            <small>Enter message (optional) and click button "Send"</small>
+            <div class="contact-section">
+                <div class="wrapper centered">
+                    <article class="letter">
+                        <div class="side">
+                            <h1>Contact us</h1>
+                            <p>
+                                <textarea placeholder="Your message"></textarea>
+                            </p>
+                        </div>
+                        <div class="side">
+                            <p>
+                                <input type="text" placeholder="Your name" >
+                            </p>
+                            <p>
+                                <input type="email" placeholder="Your email" >
+                            </p>
+                            <p>
+                                <button id="sendLetter">Send</button>
+                            </p>
+                        </div>
+                    </article>
+                    <div class="envelope front"></div>
+                    <div class="envelope back"></div>
+                </div>
+                <p class="result-message centered">Thank you for your message</p>
+            </div>
+        </div>
+        <script>
+          function addClass() {
+        document.body.classList.add("sent");
+      }
+      
+      sendLetter.addEventListener("click", addClass);
+      </script>
+        </div>
       </div>
+      <main-footer></main-footer>
     </section>
+    <!--Article-->
     <section class="page face bottom" id="blog">
       <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">blog Page</div>
+        <div class="act-table-cell ver-middle">blog Page
+        </div>
       </div>
+      <main-footer></main-footer>
     </section>
+    <!--Article-->
     <section class="page face left" id="article">
       <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">article Page</div>
+        <div class="act-table-cell ver-middle">article Page
+        </div>
       </div>
+      <main-footer></main-footer>
     </section>
   </div>
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src="integration.js"></script>
+  <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+  <script src="footer.js"></script>
+  <script src="nav.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
