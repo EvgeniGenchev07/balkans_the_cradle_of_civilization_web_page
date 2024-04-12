@@ -52,12 +52,6 @@ footer {
     width: 100%;
 }
 
-nav {
-    background-color: #666;
-    padding: 10px;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-}
 
 @keyframes slideDown {
     from {
@@ -88,33 +82,4 @@ nav {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #666;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #333;
 }
