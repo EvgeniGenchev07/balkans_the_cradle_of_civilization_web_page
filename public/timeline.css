@@ -1,8 +1,6 @@
 /* Reset styles */
 body {
     font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
   }
   
   #timeline {
@@ -79,7 +77,13 @@ body {
       }
     }
   }
-  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
   .tl-content {
     transform: translate3d(0, 0, 0) translateY(25px);
     position: relative;
@@ -159,3 +163,4 @@ body {
         opacity: 1;
     }
 }
+  }

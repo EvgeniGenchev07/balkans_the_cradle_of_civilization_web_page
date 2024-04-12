@@ -66,13 +66,4 @@ header {
 }
 
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    animation: fadeIn 1s ease-in-out;
-}
+

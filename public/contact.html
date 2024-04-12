@@ -30,15 +30,20 @@
                     </p>
                 </div>
                 <div class="side">
-                    <p>
-                        <input type="text" placeholder="Your name" >
-                    </p>
-                    <p>
-                        <input type="email" placeholder="Your email" >
-                    </p>
-                    <p>
-                        <button id="sendLetter">Send</button>
-                    </p>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <p>
+                            <input type="hidden" name="access_key" value="e6cb5d55-9657-4880-9152-ebbfc34a3aa2">
+                        </p>
+                            <p>
+                            <input type="text" name="name" placeholder="Your name" >
+                        </p>
+                        <p>
+                            <input type="email" name="email" placeholder="Your email" >
+                        </p>
+                        <p>
+                            <button id="sendLetter" type="submit">Send</button>
+                        </p>
+                    </form>
                 </div>
             </article>
             <div class="envelope front"></div>
@@ -57,6 +62,5 @@ sendLetter.addEventListener("click", addClass);
 <main-footer></main-footer>
 <script src="nav.js"></script>
 <script src="footer.js"></script>
-
 </body>
 </html>
