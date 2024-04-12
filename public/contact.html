@@ -46,9 +46,14 @@
         </div>
         <p class="result-message centered">Thank you for your message</p>
     </div>
-
 </div>
+<script>
+    function addClass() {
+  document.body.classList.add("sent");
+}
 
+sendLetter.addEventListener("click", addClass);
+</script>
 <main-footer></main-footer>
 <script src="nav.js"></script>
 <script src="footer.js"></script>

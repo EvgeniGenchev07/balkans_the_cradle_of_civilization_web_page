@@ -1,128 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - 3D Website Rotate </title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./contact.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<header>
-  <nav class="text-center">
-    <ul class="inline-block">
-      <li class="pull-left active"><a href="#" data-direction="front">Home</a></li>
-      <li class="pull-left"><a href="#" data-direction="back">Portfolio</a></li>
-      <li class="pull-left"><a href="#" data-direction="top">About</a></li>
-      <li class="pull-left"><a href="#" data-direction="right">Contact</a></li>
-      <div class="clearfix"></div>
-    </ul>
-  </nav>
-</header>
-<div id="wrap">
-  <div class="cube">
-    <!--Article-->
-    <section class="page active face front" id="home">
-      <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">
-          Home Page
-          
-        </div>
-      </div>
-      <main-footer></main-footer>
-    </section>
-    <!--Article-->
-    <section class="page face back" id="portfolio">
-      <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">Portfolio Page
-        </div>
-      </div>
-      <main-footer></main-footer>
-    </section>
-   
-    <!--Article-->
-    <section class="page face top" id="about">
-      <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">about Page
-        </div>
-      </div>
-      <main-footer></main-footer>
-    </section>
-    <!--Contact-->
-    <section class="page face right" id="contact">
-      <div class="act-table text-center">
-        <div class="act-table-cell-ver-middle">
-          <div class="contact-form">
-
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>Have any questions or inquiries? Feel free to contact us using the form below or through our email.</p>
-                <p>Email: contact@prehistoricadventures.com</p>
-            </div>
-            <small>Enter message (optional) and click button "Send"</small>
-            <div class="contact-section">
-                <div class="wrapper centered">
-                    <article class="letter">
-                        <div class="side">
-                            <h1>Contact us</h1>
-                            <p>
-                                <textarea placeholder="Your message"></textarea>
-                            </p>
-                        </div>
-                        <div class="side">
-                            <p>
-                                <input type="text" placeholder="Your name" >
-                            </p>
-                            <p>
-                                <input type="email" placeholder="Your email" >
-                            </p>
-                            <p>
-                                <button id="sendLetter">Send</button>
-                            </p>
-                        </div>
-                    </article>
-                    <div class="envelope front"></div>
-                    <div class="envelope back"></div>
-                </div>
-                <p class="result-message centered">Thank you for your message</p>
-            </div>
-        </div>
-        <script>
-          function addClass() {
-        document.body.classList.add("sent");
-      }
-      
-      sendLetter.addEventListener("click", addClass);
-      </script>
-        </div>
-      </div>
-      <main-footer></main-footer>
-    </section>
-    <!--Article-->
-    <section class="page face bottom" id="blog">
-      <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">blog Page
-        </div>
-      </div>
-      <main-footer></main-footer>
-    </section>
-    <!--Article-->
-    <section class="page face left" id="article">
-      <div class="act-table text-center">
-        <div class="act-table-cell ver-middle">article Page
-        </div>
-      </div>
-      <main-footer></main-footer>
-    </section>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="index.css" rel="stylesheet"/>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.11.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.11.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.11.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Prehistory Sit</h1>
+  </header>
+  <main-nav></main-nav>
+  
+  
+  <div class="container">
+      <h2>About Prehistory</h2>
+      <p>Prehistory is the period of human history before written records. It includes the Paleolithic, Mesolithic, and Neolithic periods, which spanned millions of years.</p>
+      <p>This website aims to explore the various aspects of prehistoric life, including ancient civilizations, tools, art, and cultural developments</p>
   </div>
-</div>
-<!-- partial -->
+  
+  <footer>
+      <p>&copy; 2024   Prehistory Website   All rights reserved</p>
+  </footer>
   <script src="integration.js"></script>
   <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-  <script src="footer.js"></script>
   <script src="nav.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
-  <script src="./script.js"></script>
-
-</body>
+  </body>
 </html>
