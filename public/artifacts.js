@@ -20,6 +20,7 @@ const card_model=data=>`
     <div class="back">
         <div class="inner">
             <p>${data.info}</p>
+            <button class="btnartf"><span>Open</span><span>Read more</span></button>
         </div>
     </div>
 </div> </div>
