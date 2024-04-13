@@ -26,7 +26,6 @@ const card_model=data=>`
 </div> </div>
 </div>
 `
-console.log('red')
 fetch('artifacts_data.json')
 .then(response => response.json())
 .then(data => {
