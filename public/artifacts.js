@@ -26,7 +26,7 @@ const card_model=data=>`
 </div> </div>
 </div>
 `
-console.log(red)
+console.log('red')
 fetch('artifacts_data.json')
 .then(response => response.json())
 .then(data => {
@@ -36,6 +36,6 @@ fetch('artifacts_data.json')
 
         var artifact = artifacts[i];
         document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model({image:artifact.image,name:artifact.name,info:artifact.short_info}));
-        console.log(green)
+        console.log('green')
     }
 });
