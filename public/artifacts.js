@@ -5,17 +5,26 @@
 }
 customElements.define('main-nav', Nav);
 */
-const card_model=data=>`<div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src=${data.image}>
-              </div>
-              <div class="flip-card-back">
-                <h1>${data.name}</h1>
-                <p>${data.info}</p>
-              </div>
-            </div>
-          </div>`
+const card_model=data=>`
+<div class="wrapper">
+
+            <div class="cols">
+<div class="col" ontouchstart="this.classList.toggle('hover');">
+<div class="container">
+    <div class="front" style="background-image: url(${data.image})">
+        <div class="inner">
+            <p>DUBAI</p>
+            <span>${data.name}</span>
+        </div>
+    </div>
+    <div class="back">
+        <div class="inner">
+            <p>${data.info}</p>
+        </div>
+    </div>
+</div> </div>
+</div>
+`
 fetch('../assets/artifacts_data.json')
 .then(response => response.json())
 .then(data => {
