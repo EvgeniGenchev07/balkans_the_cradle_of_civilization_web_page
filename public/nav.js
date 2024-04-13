@@ -7,7 +7,7 @@ class Nav extends HTMLElement {
                     cursor:pointer;
                     float:right; 
                 }
-                /* Your overlay CSS */
+
                 .overlay {
                     height: 100%;
                     width: 0;
@@ -63,7 +63,6 @@ class Nav extends HTMLElement {
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
                 <div class="overlay-content">
-<<<<<<< HEAD
                     <a href="index.html">Home</a>
                     <a href="artifacts.html">Artefacts</a>
                     <a href="aboutus.html">About us</a>
@@ -71,19 +70,8 @@ class Nav extends HTMLElement {
                 </div>
             </div>
             <span style="font-size:30px;cursor:pointer" id="openBtn">&#9776; </span>
-=======
-                    <a href="index.html">Начална страница</a>
-                    <a href="timeline.html">Линия на времето</a>
-                    <a href="artifacts.html">Артефакти</a>
-                    <a href="aboutus.html">За нас</a>
-                    <a href="contact.html">Контакти</a>
-                </div>
-            </div>
-            <span class="opnbtn" id="openBtn">&#9776;</span>
->>>>>>> ae7856053f03605da2e885cda66d8c5747f638dd
         `;
 
-        // Add event listeners
         this.querySelector('#openBtn').addEventListener('click', () => this.openNav());
         this.querySelector('#closeBtn').addEventListener('click', () => this.closeNav());
     }
