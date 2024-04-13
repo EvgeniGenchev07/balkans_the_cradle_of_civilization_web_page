@@ -2,14 +2,7 @@ class Nav extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <style>
-      nav {
-        background-color: #666;
-        padding: 10px;
-        position: sticky;
-        text-align: center;
-        animation: fadeIn 1s ease-in-out;
-        
-        this.innerHTML = `
+    
             <style>
                 .overlay {
                     height: 100%;
