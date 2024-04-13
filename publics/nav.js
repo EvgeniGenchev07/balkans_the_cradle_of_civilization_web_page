@@ -5,6 +5,7 @@ class Nav extends HTMLElement {
       nav {
         background-color: #666;
         padding: 10px;
+        position: sticky;
         text-align: center;
         animation: fadeIn 1s ease-in-out;
     }

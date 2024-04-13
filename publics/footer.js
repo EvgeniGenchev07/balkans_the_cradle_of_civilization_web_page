@@ -13,7 +13,7 @@ class Footer extends HTMLElement {
     }   
     </style>
         <footer>            
-        <p>&copy; 2024 Prehistory Website. All rights reserved.</p>         
+        <p>&copy; 2024 Prehistory Website All rights reserved.</p>         
         </footer>     
       `;
     }

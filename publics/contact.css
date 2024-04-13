@@ -1,20 +1,19 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  background-color: #c8e7d8;
+  color: #4e5e72;
+  text-align: center;
+  font-family: monospace;
+  overflow: hidden;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2rem;
+  font-family: 'Dancing Script';
 }
 
 .contact-section {
@@ -64,23 +63,7 @@ header {
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #c8e7d8;
-  color: #4e5e72;
-  text-align: center;
-  font-family: monospace;
-  overflow: hidden;
-}
-h1, p {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  font-size: 2rem;
-  font-family: 'Dancing Script';
-}
+
 small {
   display: block;
   padding: 1rem 0;
