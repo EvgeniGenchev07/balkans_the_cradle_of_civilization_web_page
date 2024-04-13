@@ -41,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slideUp 1s ease-in-out;
   }
 
   .profile-card {
@@ -72,6 +73,25 @@
     color: #777;
     text-align: center;
   }
+  .container-text{
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+  }
+  @keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 
 
