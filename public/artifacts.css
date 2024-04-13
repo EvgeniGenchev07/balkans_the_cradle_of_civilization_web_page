@@ -273,3 +273,49 @@
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
+/*New flipcard*/
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-content {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
