@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "publics",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "https://balkansthecradleofcivili-e98d5.web.app",
         "destination": "/index.html"
       }
     ]
