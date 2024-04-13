@@ -1,9 +1,8 @@
 class Nav extends HTMLElement {
     connectedCallback() {
-      this.innerHTML = `
-      <style>
-    
+        this.innerHTML = `
             <style>
+                /* Your overlay CSS */
                 .overlay {
                     height: 100%;
                     width: 0;
@@ -59,15 +58,19 @@ class Nav extends HTMLElement {
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
                 <div class="overlay-content">
-                    <a href="about.html">About</a>
-                    <a href="timeline.html">Timeline</a>
-                    <a href="index.html">Home</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
                 </div>
             </div>
+            <h2>Fullscreen Overlay Nav Example</h2>
+            <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+            <p>In this example, the navigation menu will slide in, from left to right:</p>
             <span style="font-size:30px;cursor:pointer" id="openBtn">&#9776; open</span>
         `;
 
+        // Add event listeners
         this.querySelector('#openBtn').addEventListener('click', () => this.openNav());
         this.querySelector('#closeBtn').addEventListener('click', () => this.closeNav());
     }
@@ -82,6 +85,7 @@ class Nav extends HTMLElement {
 }
 
 customElements.define('main-nav', Nav);
+
 
 
   
