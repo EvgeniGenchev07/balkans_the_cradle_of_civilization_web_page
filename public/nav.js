@@ -57,13 +57,13 @@ class Nav extends HTMLElement {
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
                 <div class="overlay-content">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                    <a href="index.html">Home</a>
+                    <a href="artifacts.html">Artefacts</a>
+                    <a href="aboutus.html">About us</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
-            <span style="font-size:30px;cursor:pointer" id="openBtn">&#9776; open</span>
+            <span style="font-size:30px;cursor:pointer" id="openBtn">&#9776; </span>
         `;
 
         this.querySelector('#openBtn').addEventListener('click', () => this.openNav());
