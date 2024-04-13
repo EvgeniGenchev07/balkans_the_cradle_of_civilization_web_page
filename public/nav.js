@@ -1,6 +1,5 @@
 class Nav extends HTMLElement {
     connectedCallback() {
-<<<<<<< Updated upstream:public/nav.js
       this.innerHTML = `
       <style>
       nav {
@@ -9,8 +8,7 @@ class Nav extends HTMLElement {
         position: sticky;
         text-align: center;
         animation: fadeIn 1s ease-in-out;
-=======
-        this.innerHTML = `
+        
             <style>
                 .overlay {
                     height: 100%;
@@ -78,7 +76,6 @@ class Nav extends HTMLElement {
 
         this.querySelector('#openBtn').addEventListener('click', () => this.openNav());
         this.querySelector('#closeBtn').addEventListener('click', () => this.closeNav());
->>>>>>> Stashed changes:publics/nav.js
     }
 
     openNav() {
