@@ -309,6 +309,68 @@
   pointer-events: auto;
 }
 
+.card_title{
+  color: hsl(201, 14%, 20%); 
+  font-size: 20px;
+  padding: 10px 14px 5px;
+  margin: 0;
+}
+.card_description{ 
+  margin: 0;
+  padding: 0 14px 10px; 
+  font-size: 14px;
+  color: hsl(201, 14%, 40%); 
+  text-align: left;
+}
+.card_gloss{
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  position: absolute;
+  will-change: opacity;
+}
+.card_gloss.card_gloss-animatable{
+  transition: 0.25s opacity ease-out;
+}
+:root{
+  font-family: inter;
+  line-height: 1,5;
+  font-weight: 400;
+  background-color: #98a7b0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smooting: antialiased;
+  -moz-osx-font-smooting: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.card{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card_image{
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+}
+.card_content{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 /0.1),0 8px 10px -5px rgb(0 0 0 /0.1);
+  width: 100%;
+  max-width: 300px;
+  will-change: transform;
+  transition: transform 0.25s ease-out;
+}
 
 
 /* #overlay {
@@ -327,9 +389,107 @@
   opacity: 1;
   pointer-events: all;
 } */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+body {
+    background: -webkit-linear-gradient(top, #ddd 0%, #f0f0f0 40%);
+    background: linear-gradient(to bottom, #ddd 0%, #f0f0f0 40%);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(800px);
+    transform: perspective(800px);
+   background:lightgoldenrodyellow;
+}
+.wrap {
+  position: absolute;
+  perspective: 600px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-shadow, .card {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 450px;
+  z-index: 1;
+  position: absolute;
+  border-radius: 10px;  
+  top: clip;
+  bottom: clip;
+  left: clip;
+  right: clip;
+}
+.card {
+  background: #fff url('https://cdn.dribbble.com/users/1338391/screenshots/17547297/media/87cde54877f594d7e40ff90094adc782.jpg') 50% 50%;
+  background-size: 450%;
+}
+.card-shine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index:1;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(315deg, rgba(245, 245, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: linear-gradient(135deg, rgba(255,255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%);
+  z-index: -1;
+}
+.card-shadow {
+  top: 10px;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  z-index: -1;
+  transform: scale(.5,.5);
+}
+.card-front, .card-title, .card-subtitle {
+    position: absolute;
+    color: #FFF;
+    transform-style: preserve-3d;
+}
+.card-front {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;    
+    z-index:0;
+    background-color: rgba(0,0,0,.1);   
+}
+.card-title { 
+    font-weight: 700;
+    text-align: left;
+    left: 30px;
+    bottom: 140px;
+    font-size: 35px;
+    line-height: 30px;
+    text-shadow: 0 5px 8px rgba(0,0,0,.65);
+    transform: translateZ(0px);
+    overflow: hidden;
+    margin: 0;
+    width: 80%;
+}
+.card-subtitle {    
+    font-weight: normal;
+    text-align: left;
+    left: 30px;
+    width: 80%;
+    bottom: 80px;
+    font-size: 25px;
+    line-height: 20px;
+    text-shadow: 0 3px 6px rgba(0,0,0,.8);
+    transform: translateZ(0px);
+}
 .wrapper {
   display: flex;
-  justify-content: center; 
+  justify-content:baseline; 
   align-items: center; 
   height: 100vh; 
 }
