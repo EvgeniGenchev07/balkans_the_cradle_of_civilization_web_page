@@ -1,27 +1,27 @@
 {
     "artifacts":[
         {
-            "image":"../assets/varna_gold.png",
+            "image":"./assets/varna_gold.png",
             "name":"varn gold",
             "short_info":"amazing gold"
         },
         {
-            "image":"../assets/varna_gold.png",
+            "image":"./assets/varna_gold.png",
             "name":"varna gold",
             "short_info":"amazing gold"
         },
         {
-            "image":"../assets/varna_gold.png",
+            "image":"./assets/varna_gold.png",
             "name":"varna gold",
             "short_info":"amazing gold"
         },
         {
-            "image":"../assets/varna_gold.png",
+            "image":"./assets/varna_gold.png",
             "name":"varna gold",
             "short_info":"amazing gold"
         },
         {
-            "image":"../assets/varna_gold.png",
+            "image":"./assets/varna_gold.png",
             "name":"varna gold",
             "short_info":"amazing gold"
         }
