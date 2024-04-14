@@ -1,32 +1,40 @@
 const card_model=data=>`
 <div class="wrapper">
-
-            <div class="cols">
-<div class="col" ontouchstart="this.classList.toggle('hover');">
-<div class="container">
-    <div class="front" style="background-image: url(${data.image})">
-        <div class="inner">
-            <p>DUBAI</p>
-            <span>${data.name}</span>
-        </div>
-    </div>
-    <div class="back">
-        <div class="inner">
-            <p>${data.info}</p>
-            
-            <button  id="${data.id}" class="btnartf"><span>Open</span><span>Read more</span></button>
-        </div>
-    </div>
-</div> </div>
-</div>
-`
-/* <div class="card" id="${'modal-container'+data.id}">
-            <div class="card_content">
-                <div class="card_gloss">
-                    <p class="card_description" id="modal"></p>
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front" style="background-image: url(${data.image})">
+                    <div class="inner">
+                        <p>DUBAI</p>
+                        <span>${data.name}</span>
+                    </div>
+                </div>
+                <div class="back">
+                <div class="inner">
+                    <p>${data.info}</p>
+                    <button  id="${data.id}" class="btnartf"><span>Open</span><span>Read more</span></button>
                 </div>
             </div>
-        </div> */
+        </div> 
+    </div>
+</div>
+<div class="manta" id="${'manta'+data.id}">
+    <div class="close-container" id="x_button">
+        <div class="leftright"></div>
+        <div class="rightleft"></div>
+    </div>
+    <div class="card" style="background: #fff url(${data.image}) 50% 50%">
+        <div class="card-shine">
+            <div class="card-shadow">
+                <div class="wrap"></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-info">
+        <h2 class="card-title">${data.name}</h2>
+        <p class="card-subtitle" id="modal">${data.info}</p> 
+    </div>
+</div>`
 fetch('assets/artifacts_data.json')
 .then(response => response.json())
 .then(data => {
@@ -37,12 +45,26 @@ fetch('assets/artifacts_data.json')
         document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model({image:artifact.image,name:artifact.name,info:artifact.short_info,id:i}));
         let modal_btn = document.getElementById(i);
         modal_btn.addEventListener('click',()=>{      
-            //modal_btn.closest('.modal-container').classList.add('show')
-            document.getElementById('modal-container'+modal_btn.id).classList.add('show');
+            document.getElementById('manta'+modal_btn.id).classList.add('show');
+            document.getElementById('main').classList.add('hide');
+            document.getElementById('x_button').classList.add('show');
+            document.body.classList.add('hide');
         });
-    }
-});
-var 
+        let x_buttons = document.getElementsByClassName('close-container');
+        for(let j = 0; j<x_buttons.length;j++)
+        {
+            x_buttons[j].addEventListener('click',()=>{
+                var mantas = document.getElementsByClassName('manta');
+                for(var index = 0;index<mantas.length;index++)
+                {
+                    mantas[index].classList.remove('show')
+                }
+                document.getElementById('main').classList.remove('hide');
+                document.getElementById('x_button').classList.remove('show');
+                document.body.classList.remove('hide');
+            });
+        };
+        var 
 $card = $('.card'),
 $cardTitle = $('.card-title'),
 $cardSubtitle = $('.card-subtitle'),
@@ -87,4 +109,6 @@ $(document).mousemove(function(event) {
 
 	$cardSubtitle.css({"transform": "translateX(" + ((mouseFromCenter.x / 25) * 0.5) + "px) translateY(" + ((mouseFromCenter.y / 25) * 1.15) + "px) translateZ(60px)"
 	});
+});
+    }
 });
