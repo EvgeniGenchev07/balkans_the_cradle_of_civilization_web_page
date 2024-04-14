@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Контакти</title>
     <link rel="stylesheet" href="contact.css">
     <link href="style.css" rel="stylesheet"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -28,25 +28,27 @@
             <article class="letter">
                 <div class="side">
                     <h1>Contact us</h1>
+                    <form method="POST" action="https://sheetdb.io/api/v1/5glnhoicmz34w" id="sheetdb-form">
                     <p>
-                        <textarea placeholder="Your message"></textarea>
+                        <textarea placeholder="Your message" name="data[message]"></textarea>
                     </p>
                 </div>
                 <div class="side">
-                    <!--<p>
+                    <!---p>
                         method="POST"
-                        action="https://api.web3forms.com/submit"
-                        <input type="hidden" name="access_key" value="e6cb5d55-9657-4880-9152-ebbfc34a3aa2">
-                    </p>-->
+                        action="https://script.google.com/macros/s/AKfycbwqlOg0vc0JhtcxeZvHSUXp847-rOVRZwQxho3-j3xnbKg1JjQNy77e0XYjb5xE4M4/exec"
+                    </p!--->
+                    
                     <p>
-                            <input id="name" type="text" name="name" placeholder="Your name">
+                            <input id="name" type="text" name="data[name]" placeholder="Your name">
                         </p>
                         <p>
-                            <input id="email" type="email" name="email" placeholder="Your email">
+                            <input id="email" type="email" name="data[email]" placeholder="Your email">
                         </p>
                         <p>
                             <button id="sendLetter" type="submit">Send</button>
                         </p>
+                    </form>
                     </div>
                 </article>
             <div class="envelope front"></div>
@@ -55,19 +57,23 @@
         <p class="result-message centered">Thank you for your message</p>
     </div>
 </div>
-<script>
-    function addClass() {
-        /*        if(document.getElementsById("email").value!="")
-        {
-            if(document.getElementsById("name").value!="")
-            {  */
- 
-                document.body.classList.add("sent");
-            }
-        
-
-
-sendLetter.addEventListener("click", addClass);
+<script >
+    var form=document.getElementById('sheetdb-form');
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(document.getElementById("sheetdb-form"))
+    }).then(response => {
+        document.body.classList.add("sent");
+        return response.json();
+    }).then(data => {
+        console.log(data);
+    }).catch(error => {
+        console.error('Error:', error);
+    });
+});
+    
 </script>
 <main-footer></main-footer>
 <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
