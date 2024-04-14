@@ -52,7 +52,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 nav ul {
@@ -60,6 +60,7 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
+  position: sticky;
   gap: 40px;
 }
 
