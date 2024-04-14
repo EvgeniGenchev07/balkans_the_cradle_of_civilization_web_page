@@ -59,6 +59,7 @@ h1 {
 }
 
 @use postcss-nested;
+
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 * {
   box-sizing: border-box;
@@ -257,4 +258,17 @@ textarea:focus {
   50% {transform: translateY(-8rem) scale(0.3, 0.5);}
   90% {transform: translateY(-8.5rem) scale(0.3, 0.5);}
   100% {transform: translateY(-8rem) scale(0.3, 0.5);}
+}
+.refresh-button {
+  position: absolute;
+  top: 12cm;
+  left: 16.5cm;
+}
+
+.refresh-button:hover {
+  background-color: #007bff; 
+  color: #fff;
+  cursor: pointer; 
+  opacity: 0.8;
+  transition: opacity 0.3s ease; 
 }
