@@ -11,43 +11,36 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         </head>
         <body>
-            
-            <main-nav></main-nav>
-            <button id="menu-toggle"  class="menu" onclick="this.classList.toggle('opened');this.classList.add('effect');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-                <svg width="100" height="100" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                  <path class="line line2" d="M 20,50 H 80" />
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-                <label for="menu-toggle"><i class="fas fa-times"></i>
-                  <i class="fas fa-bars"></i>
-                </label>
-              </button>
-            
-            
-<div class="page-content-wrapper">
-  <div class="page-content">
-    <button  class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-        <svg width="100" height="100" viewBox="0 0 100 100">
-          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-          <path class="line line2" d="M 20,50 H 80" />
-          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-        </svg>
-      </button>
-    <div id="artifacts"></div>  
-    <script class="bot" async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+          <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__button">
+              <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+            </label>
+            <div class="navigation__background"></div>
+        
+            <nav class="navigation__nav" role="navigation">
+              <ul class="navigation__list navigation_backeffect">
+                <li class="navigation__item">
+                  <a target="_blank" data-text="Начална страница" href="index.html" class="navigation__link">Начална страница</a>
+                </li>
+                <li class="navigation__item">
+                  <a target="_blank" data-text="Артефакти" href="artifacts.html" class="navigation__link">Артефакти</a>
+                </li>
+                <li class="navigation__item">
+                  <a target="_blank" data-text="Линия на времето" href="timeline.html" class="navigation__link">Линия на времето</a>
+                </li>
+                <li class="navigation__item">
+                  <a target="_blank" data-text="За Нас" href="aboutus.html" class="navigation__link">За Нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a target="_blank" data-text="Контакти" href="contact.html" class="navigation__link">Контакти</a>
+                </li>
+          </ul>
+        </nav>
+        </div>
+        <div id="artifacts"></div>  
+        <script class="bot" async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
             <main-footer></main-footer>  
-          </div>
-</div>
-<div class="menu-items">
-    <ul>
-        <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Home">Home</a></li>
-        <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Blogs">Blogs</a></li>
-        <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Coding">Coding</a></li>
-        <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Skills">Skills</a></li>
-        <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Extras">Extras</a></li>
-      </ul>
-</div>
         <script src="artifacts.js"></script>
         <script src="nav.js"></script>
         <script src="popupwindow.js"></script>

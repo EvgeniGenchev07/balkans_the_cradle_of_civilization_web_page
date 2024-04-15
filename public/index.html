@@ -27,15 +27,34 @@
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 </head>
 <body>
-  <input type="checkbox" id="menu-toggle"/>
-<label for="menu-toggle"><i class="fas fa-times"></i>
-  <i class="fas fa-bars"></i>
-</label>
-<div class="page-content-wrapper">
-  <div class="page-content">
-<!-- partial:index.partial.html -->
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+    </label>
+    <div class="navigation__background"></div>
+
+    <nav class="navigation__nav" role="navigation">
+      <ul class="navigation__list navigation_backeffect">
+        <li class="navigation__item">
+          <a target="_blank" data-text="Начална страница" href="index.html" class="navigation__link">Начална страница</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Артефакти" href="artifacts.html" class="navigation__link">Артефакти</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Линия на времето" href="timeline.html" class="navigation__link">Линия на времето</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="За Нас" href="aboutus.html" class="navigation__link">За Нас</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Контакти" href="contact.html" class="navigation__link">Контакти</a>
+        </li>
+  </ul>
+</nav>
+</div>
 <header>
-  <menu-nav></menu-nav>
   <nav class="text-center">
     <ul class="inline-block">
       <li class="pull-left active"><a href="#" data-direction="front">Home</a></li>
