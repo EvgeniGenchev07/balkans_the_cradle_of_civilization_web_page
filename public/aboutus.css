@@ -4,7 +4,9 @@
     align-items: center;
     margin: 50px auto;
 }
-
+footer{
+    position:fixed;
+    }
 .about-text {
     max-width: 50%;
     padding: 20px;
