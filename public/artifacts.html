@@ -11,17 +11,36 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         </head>
         <body>
-            <header>
-                <menu-nav></menu-nav>
-                <h1>Артефакти</h1>
-            </header>
-            <main-nav></main-nav>
             
-            <div id="artifacts"></div>    
-            <div id="bot">
-                <script class="bot" async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-            </div> 
-            <main-footer></main-footer>
+            <main-nav></main-nav>
+            <input type="checkbox" id="menu-toggle"/>
+<label for="menu-toggle"><i class="fas fa-times"></i>
+  <i class="fas fa-bars"></i>
+</label>
+<div class="page-content-wrapper">
+  <div class="page-content">
+    <div id="artifacts"></div>  
+    <script class="bot" async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+            <main-footer></main-footer>  
+          </div>
+</div>
+<div class="menu">
+    <ul id="nav">
+        <li class="nav-link">
+            <h1 target="_blank" data-name="home" data-text="Home">Home</h1>
+            <a  >Ho</a>
+        </li>
+        <li class="nav-link">
+            <h1 data-name="About">About</h1>
+        </li>
+        <li class="nav-link">
+            <h1 data-name="services">services</h1>
+        </li>
+        <li class="nav-link">
+            <h1 data-name="contact">contact</h1>
+        </li>
+    </ul>
+</div>
         <script src="artifacts.js"></script>
         <script src="nav.js"></script>
         <script src="popupwindow.js"></script>
