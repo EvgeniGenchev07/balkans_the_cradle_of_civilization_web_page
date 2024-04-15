@@ -1,8 +1,8 @@
 const timeline_model = (dates,info,buttons) => dates+=info+buttons;
 const buttons = `<div id="grad_top"></div>
 <div id="grad_bottom"></div>
-<a href="#" id="next">+</a>
-<a href="#" id="prev">-</a>
+<a href="#" id="next" class="timelinr" >+</a>
+<a href="#" id="prev" class="timelinr" >-</a>
 </div>`;
 var dates_ul = `<ul id="dates">`
 var info_ul = `<ul id="issues">`
@@ -35,6 +35,5 @@ fetch('assets/metadata.json')
     }
     dates_ul+='</ul>'
     info_ul+='</ul>'
-    console.log(timeline_model(dates_ul,info_ul));
     document.getElementById("timeline").insertAdjacentHTML('beforeend',timeline_model(dates_ul,info_ul,buttons));
 });

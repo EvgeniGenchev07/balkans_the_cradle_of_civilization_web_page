@@ -4,62 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Линия на времето</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="timeline.css">
-    <link href="style.css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <script defer src="timeline.js"></script>
+<script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" defer src="https://chatling.ai/js/embed.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  </head>
+<script defer src="footer.js"></script>
+</head> 
 <body>
-
-<header>
-  <menu-nav></menu-nav>
-    <h1>Линия на времето</h1>
-</header>
-<div class="navigation">
-  <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="navigation__button">
-    <span class="navigation__icon" aria-label="toggle navigation menu"></span>
-  </label>
-  <div class="navigation__background"></div>
-
-  <nav class="navigation__nav" role="navigation">
-    <ul class="navigation__list navigation_backeffect">
-      <li class="navigation__item">
-        <a target="_blank" data-text="Начална страница" href="index.html" class="navigation__link">Начална страница</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="Артефакти" href="artifacts.html" class="navigation__link">Артефакти</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="Линия на времето" href="timeline.html" class="navigation__link">Линия на времето</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="За Нас" href="aboutus.html" class="navigation__link">За Нас</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="Контакти" href="contact.html" class="navigation__link">Контакти</a>
-      </li>
-</ul>
-</nav>
-</div>
-      <div id="timeline"></div>
+  <header>
+    <menu-nav></menu-nav>
+      <h1>Линия на времето</h1>
       
-<script>
-  $(function(){
-    $().timelinr({
-        orientation: 	'vertical',
-        issuesSpeed: 	300,
-        datesSpeed: 	100,
-        arrowKeys: 		'true',
-        startAt:		3
-    })
+  </header>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+    </label>
+    <div class="navigation__background"></div>
+  
+    <nav class="navigation__nav" role="navigation">
+      <ul class="navigation__list navigation_backeffect">
+        <li class="navigation__item">
+          <a target="_blank" data-text="Начална страница" href="index.html" class="navigation__link">Начална страница</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Артефакти" href="artifacts.html" class="navigation__link">Артефакти</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Линия на времето" href="timeline.html" class="navigation__link">Линия на времето</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="За Нас" href="aboutus.html" class="navigation__link">За Нас</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Контакти" href="contact.html" class="navigation__link">Контакти</a>
+        </li>
+  </ul>
+  </nav>
+  </div>
+      <div id="timeline" class="timeline"></div>
+      <main-footer></main-footer>
+      <script>
+        $(function() {
+  $().timelinr({
+    orientation: 'vertical',
+    issuesSpeed: 300,
+    datesSpeed: 100,
+    arrowKeys: 'true',
+    startAt: 3
+  });
 });
-</script>
-
-<main-footer></main-footer>
-<script src="timeline.js"></script>
-<script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-<script src="footer.js"></script>
+      </script>
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="http://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+      <script src="js/jquery-1.x.x.min.js"></script>
+<script src="js/jquery.timelinr-0.9.x.js"></script>
 </body>
 </html>
