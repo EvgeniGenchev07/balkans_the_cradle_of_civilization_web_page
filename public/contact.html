@@ -16,6 +16,7 @@
     <h1>Контакти</h1>
 </header>
 <main-nav></main-nav>
+
 <div class="contact-form">
 
     <div class="contact-info">
@@ -26,15 +27,15 @@
     <div class="contact-section">
         <div class="wrapper centered">
             <article class="letter">
+                <form method="POST" action="https://sheetdb.io/api/v1/5glnhoicmz34w" id="sheetdb-form">
                 <div class="side">
                     <h1>Формуляр</h1>
-                    <form method="POST" action="https://sheetdb.io/api/v1/5glnhoicmz34w" id="sheetdb-form">
                     <p>
                         <textarea placeholder="Вашето съобщение" name="data[message]"></textarea>
                     </p>
                 </div>
-                <div class="side">
-                    <p>
+                    <div class="side">
+                        <p>
                             <input id="name" type="text" name="data[name]" placeholder="Вашето име">
                         </p>
                         <p>
@@ -44,7 +45,7 @@
                             <button id="sendLetter" type="submit">Изпрати</button>
                         </p>
                     </form>
-                    </div>
+                </div>
                 </article>
             <div class="envelope front"></div>
             <div class="envelope back"></div>
