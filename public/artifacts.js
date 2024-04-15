@@ -46,7 +46,7 @@ fetch('assets/artifacts_data.json')
         let modal_btn = document.getElementById(i);
         modal_btn.addEventListener('click',()=>{      
             document.getElementById('manta'+modal_btn.id).classList.add('show');
-            document.getElementById('main').classList.add('hide');
+            document.getElementById('navigation').classList.add('hide');
             document.getElementById('x_button').classList.add('show');
             document.body.classList.add('hide');
         });
@@ -59,7 +59,7 @@ fetch('assets/artifacts_data.json')
                 {
                     mantas[index].classList.remove('show')
                 }
-                document.getElementById('main').classList.remove('hide');
+                document.getElementById('navigation').classList.remove('hide');
                 document.getElementById('x_button').classList.remove('show');
                 document.body.classList.remove('hide');
             });

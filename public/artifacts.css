@@ -357,7 +357,7 @@ html, body {
 body.hide{
   overflow: hidden;
 }
-#main.hide{
+#navigation.hide{
   display: none;
 }
 .card-shine {
