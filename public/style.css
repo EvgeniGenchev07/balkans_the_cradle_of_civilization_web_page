@@ -18,6 +18,7 @@ color: #4e5e72;
 text-align: center;
 font-family: monospace;
 overflow-y: auto;
+padding-bottom: 6.74rem;
 }
 h1, p {
 margin: 0;
@@ -36,11 +37,10 @@ float:right;
 footer {
 background-color: #333;
 color: #fff;
-padding: 10px;
-text-align: center;
-position: relative;
-bottom: 0;
-width: 100%;
+position:relative;
+padding: auto;
+text-align: center;;
+margin-top: auto;
 }  
 html,body {
   min-height:100%;
@@ -248,7 +248,7 @@ html,body {
 }
 
 .navigation_backeffect {
-  position: relative;
+  position: relative
 }
 .navigation_backeffect li {
   list-style: none;
@@ -271,13 +271,11 @@ html,body {
   background: transparent;
 }
 .navigation_backeffect li a:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 40%;
+  content: ""; 
+  position: absolute; 
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content: center; 
   align-items: center;
   font-size: 100px;
   color: rgba(0, 0, 0, 0.1);
