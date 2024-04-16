@@ -61,8 +61,8 @@ html,body {
     position: fixed;
     top: 1.5rem;
     right: 1.5rem;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem; /*5*/
+    width: 4rem;
     text-align: center;
     background-color: #fff;
     border-radius: 50%;
@@ -75,15 +75,15 @@ html,body {
     .navigation__button {
         top: 4rem;
         right: 4rem;
-        height: 7rem;
-        width: 7rem;
+        height: 6rem; /*7rem* and for witdth*/
+        width: 6rem;
     }
 }
 
 .navigation__background {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 3rem;
+    right: 3rem;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
@@ -98,8 +98,8 @@ html,body {
     .navigation__background {
         top: 4.5rem;
         right: 4.5rem;
-        height: 6rem;
-        width: 6rem;
+        height: 4.5rem; /* 6 */
+        width: 4.5rem; /* 6*/
     }
 }
 
