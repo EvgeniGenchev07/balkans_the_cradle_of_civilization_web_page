@@ -97,8 +97,8 @@ html,body {
     .navigation__background {
         top: 4.5rem;
         right: 4.5rem;
-        height: 4rem; /* 6 */
-        width: 4rem; /* 6*/
+        height: 3rem; /* 6 */
+        width: 3rem; /* 6*/
     }
 }
 
