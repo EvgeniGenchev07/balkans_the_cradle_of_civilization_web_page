@@ -18,24 +18,25 @@ const card_model=data=>`
         </div> 
     </div>
 </div>
-<div class="manta" id="${'manta'+data.id}">
-    <div class="close-container" id="x_button">
-        <div class="leftright"></div>
-        <div class="rightleft"></div>
-    </div>
-    <div class="card" style="background: #fff url(${data.image}) 50% 50%">
-        <div class="card-shine">
-            <div class="card-shadow">
-                <div class="wrap"></div>
-            </div>
+`
+const manta_model = data=>`<div class="manta" id="${'manta'+data.id}">
+<div class="close-container" id="x_button">
+    <div class="leftright"></div>
+    <div class="rightleft"></div>
+</div>
+<div class="card" style="background: #fff url(${data.image}) 50% 50%">
+    <div class="card-shine">
+        <div class="card-shadow">
+            <div class="wrap"></div>
         </div>
     </div>
-    <div class="card-info">
-        <h2 class="card-title">${data.name}</h2>
-        <p class="card-subtitle" id="modal">${data.info}</p> 
-    </div>
-</div>`
-fetch('assets/artifacts_data.json')
+</div>
+<div class="card-info">
+    <h2 class="card-title">${data.name}</h2>
+    <p class="card-subtitle" id="modal">${data.info}</p> 
+</div>
+</div>`;
+fetch('assets/metadata.json')
 .then(response => response.json())
 .then(data => {
     var artifacts = data.artifacts;
@@ -43,10 +44,12 @@ fetch('assets/artifacts_data.json')
     {
         var artifact = artifacts[i];
         document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model({image:artifact.image,name:artifact.name,info:artifact.short_info,id:i}));
+        document.getElementById("mantas").insertAdjacentHTML('beforeend',manta_model({image:artifact.image,name:artifact.name,info:artifact.short_info,id:i}));
         let modal_btn = document.getElementById(i);
         modal_btn.addEventListener('click',()=>{      
             document.getElementById('manta'+modal_btn.id).classList.add('show');
             document.getElementById('navigation').classList.add('hide');
+            document.getElementById('artifacts').classList.add('unactive');
             document.getElementById('x_button').classList.add('show');
             document.body.classList.add('hide');
         });
@@ -60,7 +63,8 @@ fetch('assets/artifacts_data.json')
                     mantas[index].classList.remove('show')
                 }
                 document.getElementById('navigation').classList.remove('hide');
-                document.getElementById('x_button').classList.remove('show');
+            document.getElementById('artifacts').classList.remove('unactive');
+            document.getElementById('x_button').classList.remove('show');
                 document.body.classList.remove('hide');
             });
         };

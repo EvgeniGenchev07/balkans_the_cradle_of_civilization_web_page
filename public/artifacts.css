@@ -360,6 +360,10 @@ body.hide{
 #navigation.hide{
   display: none;
 }
+#artifacts.unactive{
+  opacity: 0.7;
+  pointer-events: none;
+}
 .card-shine {
   position: absolute;
   width: 100%;

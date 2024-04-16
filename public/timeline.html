@@ -4,222 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Линия на времето</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="timeline.css">
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  </head>
-<body>
-
-<header>
-  <menu-nav></menu-nav>
-    <h1>Линия на времето</h1>
-</header>
-<div class="navigation">
-  <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="navigation__button">
-    <span class="navigation__icon" aria-label="toggle navigation menu"></span>
-  </label>
-  <div class="navigation__background"></div>
-
-  <nav class="navigation__nav" role="navigation">
-    <ul class="navigation__list navigation_backeffect">
-      <li class="navigation__item">
-        <a target="_blank" data-text="Начална страница" href="index.html" class="navigation__link">Начална страница</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="Артефакти" href="artifacts.html" class="navigation__link">Артефакти</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="Линия на времето" href="timeline.html" class="navigation__link">Линия на времето</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="За Нас" href="aboutus.html" class="navigation__link">За Нас</a>
-      </li>
-      <li class="navigation__item">
-        <a target="_blank" data-text="Контакти" href="contact.html" class="navigation__link">Контакти</a>
-      </li>
-</ul>
-</nav>
-</div>
-
-<section id="timeline">
-
-
-    <div class="tl-item">
-      
-  
-          <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg
-  )"></div>
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1800</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Вавилонската карта на света</h1>
-        <p>Открита е Вавилонската карта на света в Сипар,Ирак.</p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
-      </div>
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <script defer src="timeline.js"></script>
+<script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" defer src="https://chatling.ai/js/embed.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script defer src="footer.js"></script>
+</head> 
+<body>
+  <header>
+    <menu-nav></menu-nav>
+      <h1>Линия на времето</h1>
       
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1860</p>
-      </div>
+  </header>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+    </label>
+    <div class="navigation__background"></div>
   
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Произхода на българите споед Раковски</h1>
-        <p style="font-size: 0.68rem;">В книгата си „Кратко разсъждение върху тъмните и лъжовни начала на които е основана 
-          старата повестност на всички европейски народи“ пише за произхода на българите.</p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
+    <nav class="navigation__nav" role="navigation">
+      <ul class="navigation__list navigation_backeffect">
+        <li class="navigation__item">
+          <a target="_blank" data-text="Начална страница" href="index.html" class="navigation__link">Начална страница</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Артефакти" href="artifacts.html" class="navigation__link">Артефакти</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Линия на времето" href="timeline.html" class="navigation__link">Линия на времето</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="За Нас" href="aboutus.html" class="navigation__link">За Нас</a>
+        </li>
+        <li class="navigation__item">
+          <a target="_blank" data-text="Контакти" href="contact.html" class="navigation__link">Контакти</a>
+        </li>
+  </ul>
+  </nav>
+  </div>
+      <div id="timeline" class="timeline"></div>
+      <main-footer></main-footer>
+      <script>
+        $(function() {
+  $().timelinr({
+    orientation: 'vertical',
+    issuesSpeed: 300,
+    datesSpeed: 100,
+    arrowKeys: 'true',
+    startAt: 3
+  });
+});
+      </script>
       
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg
-  )"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1927</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Невероятните по рода си пещерни рисунки в Магурата</h1>
-        <p>Първият учен изследва изображенията през 1927 година.</p>
-      </div>
-  
-    </div>
-      <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/9/responsibility_3-54e5a756.jpg
-  )"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1928</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1>Ситовския надпис</h1>
-        <p>Местни дървари откриват загадка в Родопите, чието решение не могат да намерят най-добрите лингвисти. </p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/3/strips_sheets_coilsdrums-b0b72ee3.png)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1961</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Плочките от Тартария - Румъния</h1>
-        <p>Поставя въпроса дали шумерите са първата цивилизация с писменост.</p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/b/header_wieland_eMobility_1-f1ea109f.jpg)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1969</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Печатът от Караново и плочката от Градешница</h1>
-        <p>Артефакти, които задълбочават въпроса със съществуването на развита цивилизация по нашите земи.</p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1972</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Най-старото обработено злато в света</h1>
-        <p>През 1972 г. в западната промишлена зона на гр. Варна, багеристът Райчо Маринов попада на находка,която преобръща историята.</p>
-      </div>
-  
-    </div>
-    
-      <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/3/strips_sheets_coilsdrums-b0b72ee3.png)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1979</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1>Уникални артефакти край Дуранкулак</h1>
-        <p>На юг от селището Дуранкулак– Блатница през 1979 г. са намерени праисторически гробове.</p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1984</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Невероятно откритие на повече от 6000 години</h1>
-        <p>Археолози откриват останки от невероятен храмов комплекс край с.Долнослав.</p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/b/header_wieland_eMobility_1-f1ea109f.jpg)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">1996</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Разкопки край пещерата Козарника</h1>
-        <p>Археолози откриват останки от представители на съвременния човек.Също така учените открили зъб, който е датиран на около 1 400 000 години. </p>
-      </div>
-  
-    </div>
-  
-    <div class="tl-item">
-      
-      <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg)"></div>
-      
-      <div class="tl-year">
-        <p class="f2 heading--sanSerif">2017</p>
-      </div>
-  
-      <div class="tl-content">
-        <h1 class="f3 text--accent ttu">Открит е най-старият зъб в света</h1>
-        <p>Открит е най-старят зъб в света край Чирпан, който е на 7.2 милиона години.</p>
-      </div>
-  
-    </div>
-  </section>
-
-<main-footer></main-footer>
-<script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-<script src="footer.js"></script>
-<script src="nav.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="http://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+      <script src="js/jquery-1.x.x.min.js"></script>
+<script src="js/jquery.timelinr-0.9.x.js"></script>
 </body>
 </html>
