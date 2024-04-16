@@ -1,6 +1,5 @@
 const timeline_model_concat = (model_1,model_2) => model_1+=model_2;
-const title_model =title=> `<div class="ag-timeline_tagline">${title}</div>
-<div class="ag-timeline_title">${title}</div>`;
+const title_model =title=> `<div class="ag-timeline_title">${title}</div>`;
 const left_item_model= data=>`          <div class="js-timeline_item ag-timeline_item">
 <div class="ag-timeline-card_box">
   <div class="js-timeline-card_point-box ag-timeline-card_point-box">
