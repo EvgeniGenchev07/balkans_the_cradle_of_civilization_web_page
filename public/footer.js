@@ -1,6 +1,6 @@
 class Footer extends HTMLElement {
     connectedCallback() {
-      this.innerHTML = ` 
+      this.innerHTML = `
         <footer>            
         <p>&copy; 2024 Prehistory Website All rights reserved.</p>         
         </footer>     
