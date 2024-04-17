@@ -9,7 +9,6 @@ header {
   text-align: center;
 }
 body {
-background-color: #c8e7d8;
 color: #4e5e72;
 font-family: monospace;
 overflow-y: auto;
@@ -47,7 +46,7 @@ margin-top: auto;
     height: 4.5rem; /*5*/
     width: 4.5rem;
     text-align: center;
-    background-color: #fff;
+    background-color:var(--button_color);
     border-radius: 50%;
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
@@ -151,14 +150,13 @@ margin-top: auto;
 }
 
 .navigation__icon {
-
-  position: relative;
+  position:relative;
   margin-top: auto;
 }
 
 @media screen and (min-width: 768px) {
     .navigation__icon {
-        margin-top: 2.5rem;
+        margin-top:38px;
     }
 }
 
@@ -166,9 +164,11 @@ margin-top: auto;
 .navigation__icon::before,
 .navigation__icon::after {
     display: inline-block;
-    width: 1.5rem;
-    height: 1px;
-    background-color: #4A676A;
+    width: 10%;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 }
 
 @media (min-width: 768px) {
