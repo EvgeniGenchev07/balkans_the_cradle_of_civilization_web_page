@@ -334,7 +334,7 @@ html, body {
 }
 .manta{
   display: block;
-  position: absolute;
+  position: fixed;
   transition: 200ms ease-in-out;
   top: 0;
   left: 0;
