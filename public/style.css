@@ -28,7 +28,6 @@ float:right;
 footer {
 /*background-color: #333;
 color: #fff;
-<<<<<<< HEAD
 position:fixed;*/
   background-color: #333;
   color: #fff;
@@ -37,10 +36,6 @@ position:fixed;*/
   bottom: 0;
   width: 100%;
   text-align: center;
-=======
-position:fixed;
-bottom: 0;
->>>>>>> 646a8c399cefd5cd68623b6b3d362155bd4e59b8
 } 
 
 
