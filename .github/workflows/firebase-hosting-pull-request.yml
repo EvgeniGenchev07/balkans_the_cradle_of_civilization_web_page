@@ -17,7 +17,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: >-
-            ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BALKANSTHECRADLEOFCIVILI_E98D5
-            }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
           projectId: balkansthecradleofcivili-e98d5
