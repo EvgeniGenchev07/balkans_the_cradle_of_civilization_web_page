@@ -3,8 +3,6 @@ body{
   background-color: #1d1d1b;
   overflow-x: hidden;
   font-family: Georgia, serif;
-  color: #fff;
-  font-size: 14px;
 }
 @font-face {
   font-family: 'ESL Legend';
@@ -47,16 +45,19 @@ img {
 .ag-format-container {
   width: 1160px;
   margin: 0 auto;
-
+  top: 0;
   position: relative;
 }
 
 .ag-timeline-block {
   padding: 300px 0;
+  top: 0;
+  margin-top: 0;
 }
 .ag-timeline_title-box {
   padding: 0 0 30px;
-
+  top: 0;
+  margin-top: 0;
   text-align: center;
 }
 .ag-timeline_tagline {
@@ -67,7 +68,8 @@ img {
   background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
+  margin-top: 0;
+  top:0;
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -159,7 +161,7 @@ img {
 
   font-family: 'ESL Legend', sans-serif;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 23px;
   color: #FF0;
 }
 .ag-timeline-card_item {
