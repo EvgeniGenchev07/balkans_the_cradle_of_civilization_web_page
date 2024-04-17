@@ -75,7 +75,9 @@ img {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-
+  position: absolute;
+  top: 2cm;
+  left: 30%;
   font-size: 80px;
 }
 
