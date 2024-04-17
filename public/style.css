@@ -28,10 +28,7 @@ float:right;
 footer {
 background-color: #333;
 color: #fff;
-position:relative;
-padding: auto;
-text-align: center;;
-margin-top: auto;
+position:fixed;
 } 
 
 
