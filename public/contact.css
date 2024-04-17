@@ -7,9 +7,6 @@ body {
   font-family: monospace;
   overflow: hidden;
 }
-footer{
-  position: fixed;
-  }
 h1, p {
   margin: 0;
   padding: 0;
