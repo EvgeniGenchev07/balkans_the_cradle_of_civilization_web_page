@@ -1,4 +1,4 @@
-const card_model=data=>`
+const card_model=(data,id)=>`
 <div class="wrapper">
     <div class="cols">
         <div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -12,7 +12,7 @@ const card_model=data=>`
                 <div class="back">
                 <div class="inner">
                     <p>${data.info}</p>
-                    <button  id="${data.id}" class="btnartf"><span>Open</span><span>Read more</span></button>
+                    <button  id="${id}" class="btnartf"><span>Open</span><span>Read more</span></button>
                 </div>
             </div>
         </div> 
@@ -43,7 +43,7 @@ fetch('assets/metadata.json')
     for(var i = 0;i<artifacts.length;i++)
     {
         var artifact = artifacts[i];
-        document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model({image:artifact.image,title:artifact.title,name:artifact.name,info:artifact.short_info,id:i}));
+        document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model(artifact,i));
         document.getElementById("mantas").insertAdjacentHTML('beforeend',manta_model({image:artifact.image,name:artifact.name,info:artifact.short_info,id:i}));
         let modal_btn = document.getElementById(i);
         modal_btn.addEventListener('click',()=>{      
