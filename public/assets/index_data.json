@@ -1,26 +1,26 @@
 {
     "varna":{
         "basic_information":{
-            "information_title_1": "Varna",
+            "information_title_1": "Varn1",
             "information_text_1": "Varna is a city in Bulgaria",
-            "information_title_2": "Varna",
+            "information_title_2": "Varn2",
             "information_text_2": "Varna is a city in Bulgaria",
-            "information_title_3": "Varna",
+            "information_title_3": "Varn3",
             "information_text_3": "Varna is a city in Bulgaria",
             "name": "Varna",
             "description_first_half": "Varna is a city",
             "description_second_half": "in Bulgaria"
         },
         "first_paragraph":{
-        "paragraph_title": "Varna",
+        "paragraph_title": "paragraph_title1",
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "second_paragraph":{
-        "paragraph_title": "Varna",
+        "paragraph_title": "paragraph_title2",
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "third_paragraph":{
-        "paragraph_title": "Varna",
+        "paragraph_title": "paragraph_title3",
         "paragraph_information": "Varna is a city in Bulgaria"
         }
     },
