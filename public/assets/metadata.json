@@ -2,6 +2,7 @@
     "artifacts":[
         {
             "image":"./assets/varna_gold.png",
+            "title": "Varna"
             "name":"varn gold",
             "short_info":"amazing gold"
         },
