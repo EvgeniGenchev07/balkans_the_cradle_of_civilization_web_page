@@ -83,15 +83,15 @@ const fetch_and_display= object_name=>{
 	});
   });
 }
-document.getElementById('varna').addEventListener('pointerover', () => {
+document.getElementById('varna_anchor').addEventListener('click', () => {
     fetch_and_display('varna');
 });
-document.addEventListener("ancient_tooth", () => {
+document.addEventListener("ancient_tooth_anchor", () => {
     fetch_and_display('ancient_tooth');
 });
-document.addEventListener("caves", () => {
+document.addEventListener("caves_anchor", () => {
     fetch_and_display('caves');
 });
-document.addEventListener("alphabet", () => {
+document.addEventListener("alphabet_anchor", () => {
     fetch_and_display('alphabet');
 });
