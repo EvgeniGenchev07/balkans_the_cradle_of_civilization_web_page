@@ -5,7 +5,7 @@ const card_model=data=>`
             <div class="container">
                 <div class="front" style="background-image: url(${data.image})">
                     <div class="inner">
-                        <p>DUBAI</p>
+                        <p>${data.title}</p>
                         <span>${data.name}</span>
                     </div>
                 </div>
