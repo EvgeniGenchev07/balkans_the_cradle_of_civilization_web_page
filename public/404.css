@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .page_404{ 
     padding:40px 0;
     background:#fff;
@@ -12,7 +15,9 @@
 .four-zero-four-bg{ 
     background-image:url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
     height: 400px;
+    width: 85%;
     background-position: center;
+    margin: auto;
 }
 .contant_box_404 h3{
     font-size: 50px;
