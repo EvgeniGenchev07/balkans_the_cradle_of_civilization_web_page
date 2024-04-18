@@ -37,7 +37,7 @@ const right_item_model = data=>`
 <div class="ag-timeline-card_item">
   <div class="ag-timeline-card_inner">
     <div class="ag-timeline-card_img-box">
-      <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+      <img src="${data.image}" class="ag-timeline-card_img" width="640" height="360" alt="" />
     </div>
     <div class="ag-timeline-card_info">
       <div class="ag-timeline-card_title">${data.title}</div>
