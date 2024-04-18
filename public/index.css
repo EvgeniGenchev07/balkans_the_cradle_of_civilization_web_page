@@ -392,3 +392,347 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
+@import url(https://fonts.googleapis.com/css?family=Yellowtail|Merriweather:300italic,300);
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	font-weight: 300;
+	background-color: #111;
+	color: #444;
+	/* CSS pattern by Lea Verou:
+  http://lea.verou.me/css3patterns/#starry-night
+  */
+	background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+h1,
+h2,
+h3 {
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	transition: all 200ms ease-in-out;
+}
+
+button,
+.btn,
+a.btn {
+	border-radius: 5px;
+	border: 0;
+	transition: all 200ms ease-in-out;
+	text-transform: uppercase;
+}
+
+button:hover,
+.btn:hover,
+button.btn:hover,
+button:focus,
+.btn:focus,
+button.btn:focus {
+	box-shadow: 0px 27px 30px -20px rgba(0, 0, 0, 0.8);
+	transform: translateY(-2px);
+}
+
+.btn-primary,
+a.btn-primary,
+button.button-primary {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-color: rgba(0, 0, 0, 0.1);
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.btn-primary:active,
+a.btn-primary:active,
+button.info-button:active,
+button.info-button.active,
+.btn-primary:hover,
+a.btn-primary:hover,
+button.info-button:hover,
+.info-button:hover,
+.btn-primary:visited,
+a.btn-primary:visited,
+button.info-button:focus {
+	background-color: rgba(0, 0, 0, 1);
+	border-color: black;
+	color: white;
+	box-shadow: 0px 27px 30px -20px rgba(0, 0, 0, 0.8);
+}
+
+.jumbotron {
+	background: #444 url(https://c6.staticflickr.com/4/3157/2612647693_fd7594d5cd_o.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	margin-bottom: 0;
+}
+
+.jumbotron .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 0;
+}
+
+.jumbotron h1,
+.jumbotron .lead {
+	font-family: 'Yellowtail', cursive;
+	color: white;
+	position: relative;
+}
+
+.jumbotron .lead {
+	font-size: 2em;
+	letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+	.jumbotron .lead {
+		font-size: 3em;
+		letter-spacing: 2px;
+	}
+}
+
+.nav-container {
+	position: relative;
+	z-index: 1;
+}
+
+.nav-container .info-button {
+	display: block;
+	font-size: 120%;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	.nav-container .info-button {
+		font-size: 200%;
+	}
+}
+
+.nav-container,
+.info-container {
+	font-size: 80%;
+}
+
+.info-container {
+	position: relative;
+	z-index: 2;
+}
+
+.info {
+	max-width: 100%;
+	padding: 2em;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-900px);
+	transition: all 200ms ease-in-out;
+	opacity: 0;
+}
+
+.info.info-visible {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.info-container .info {
+		font-size: 130%;
+		line-height: 1.6;
+	}
+}
+
+.info .close-btn {
+	display: inline-block;
+	/*float: right;*/
+	height: 50px;
+	width: 50px;
+	position: relative;
+	top: -15px;
+	text-align: center;
+	border-radius: 50%;
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 48px;
+	color: white;
+	background-color: coral;
+	cursor: pointer;
+}
+
+.info .info-title {
+	border-bottom: 1px solid white;
+	padding-bottom: 0.5em;
+	margin-top: 16px;
+}
+
+.info .info-list {
+	list-style-type: circle;
+}
+
+.credits {
+	position: absolute;
+	bottom: 155px;
+	left: -100px;
+	color: white;
+	transform: rotate(270deg);
+	z-index: 1;
+}
+
+.credits-links {
+	color: coral;
+}
+
+.credits-links:hover,
+.credits-links:focus {
+	color: #e9c8ff;
+}
+
+
+/* marin content */
+
+.main {
+	margin-top: 0;
+	position: relative;
+	z-index: 0;
+}
+
+@media (min-width: 768px) {
+	.main {
+		margin-top: 1.5em;
+	}
+}
+
+@media (min-width: 980px) {
+	.main {
+		margin-top: 0;
+	}
+}
+
+article {
+	margin: 0;
+	padding: 2em 2em 3em;
+	position: relative;
+	z-index: 0;
+}
+
+article:first-child {
+	background-color: lightblue;
+	margin-top: -1.5em;
+}
+
+article:nth-child(2) {
+	background-color: coral;
+	margin-top: -1.5em;
+}
+
+article:nth-child(3) {
+	background: #444 url(https://dl.dropboxusercontent.com/u/32494584/sartre.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 30%;
+	margin-top: -0.8em;
+	height: 100%;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	article:nth-child(3) {
+		padding: 18%;
+	}
+}
+
+article:nth-child(3) .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+article:nth-child(3) blockquote {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: white;
+	font-size: 99%;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+	article:nth-child(3) blockquote {
+		font-size: 160%;
+	}
+}
+
+article:nth-child(4) {
+	background-color: #e9c8ff;
+	margin-top: -1.5em;
+}
+
+article:nth-child(5) {
+	color: white;
+}
+
+article:nth-child(5) .btn-lg {
+	font-size: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: rgba(0, 0, 0, 0.5);
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+@media (min-width: 980px) {
+	article:first-child {
+		margin-top: 0;
+	}
+	article:nth-child(2) {
+		margin-top: 0;
+	}
+	article:nth-child(3) {
+		margin-top: 0;
+	}
+	article:nth-child(4) {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	article:nth-child(5) .btn-lg {
+		margin-top: 30%;
+	}
+}

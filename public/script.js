@@ -1,4 +1,5 @@
 (function(document, window, $){
+	
 	$(document).ready(function(){
 
 		// Variables
@@ -38,4 +39,24 @@
 			// Functions
 		});
 	});
+	$(document).ready(function() {
+		var $infoBtns = $('.info-button'),
+			$closeInfoBtn = $('.close-btn');
+	
+		$infoBtns.each(function() {
+			var $this = $(this),
+				$btnTarget = $this.data('target'),
+				$infoBox = $('#' + $btnTarget);
+			$this.on('click', function() {
+				$infoBox.toggleClass('info-visible');
+	
+			}); //end click
+		}); //end each
+	
+		$closeInfoBtn.on('click', function() {
+			var $openInfoBox = $(this).parent('.info');
+			$openInfoBox.toggleClass('info-visible');
+		});
+	
+	});//robbed from codepen
 })(document, window, jQuery);
