@@ -43,7 +43,7 @@ fetch('assets/metadata.json')
     for(var i = 0;i<artifacts.length;i++)
     {
         var artifact = artifacts[i];
-        document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model({image:artifact.image,name:artifact.name,info:artifact.short_info,id:i}));
+        document.getElementById("artifacts").insertAdjacentHTML('beforeend',card_model({image:artifact.image,title:artifact.title,name:artifact.name,info:artifact.short_info,id:i}));
         document.getElementById("mantas").insertAdjacentHTML('beforeend',manta_model({image:artifact.image,name:artifact.name,info:artifact.short_info,id:i}));
         let modal_btn = document.getElementById(i);
         modal_btn.addEventListener('click',()=>{      
