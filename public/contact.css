@@ -275,3 +275,9 @@ textarea:focus {
   opacity: 0.8;
   transition: opacity 0.3s ease; 
 }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+

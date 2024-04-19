@@ -61,6 +61,7 @@ const fetch_and_display= object_name=>{
     document.getElementById('row').insertAdjacentHTML('beforeend',paragraph_model(page_data.first_paragraph));
     document.getElementById('row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
     document.getElementById('row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
+    
     $(document).ready(function() {
 		var $infoBtns = $('.info-button'),
 			$closeInfoBtn = $('.close-btn');
@@ -74,7 +75,6 @@ const fetch_and_display= object_name=>{
 	
 			}); //end click
 		}); //end each
-	
 		$closeInfoBtn.on('click', function() {
 			var $openInfoBox = $(this).parent('.info');
 			$openInfoBox.toggleClass('info-visible');
