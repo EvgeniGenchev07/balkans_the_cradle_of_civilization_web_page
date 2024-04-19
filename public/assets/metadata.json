@@ -22,14 +22,28 @@
             "info":"не знам"
         },
         {
-            "image":"./assets/varna_gold.png",
+            "image":"./assets/sitovo.jpg",
             "title":"Varna",
             "name":"varna gold",
             "short_info":"ьааа",
             "info":""
         },
         {
-            "image":"./assets/varna_gold.png",
+            "image":"./assets/tartaria.jpg",
+            "title":"Varna",
+            "name":"varna gold",
+            "short_info":"ьааа",
+            "info":""
+        },
+        {
+            "image":"./assets/zab-chirpan.jpg",
+            "title":"Varna",
+            "name":"varna gold",
+            "short_info":"ьааа",
+            "info":""
+        },
+        {
+            "image":"./assets/duranculak.jpg",
             "title":"Varna",
             "name":"varna gold",
             "short_info":"ьааа",
