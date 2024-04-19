@@ -52,6 +52,7 @@ img {
 .ag-timeline-block {
   padding: 300px 0;
   top: 0;
+  overflow-x: hidden;
   margin-top: 0;
 }
 .ag-timeline_title-box {
