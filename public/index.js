@@ -83,6 +83,7 @@ const fetch_and_display= object_name=>{
 	});
   });
 }
+
 document.getElementById('varna_anchor').addEventListener('click', () => {
     fetch_and_display('varna');
 });

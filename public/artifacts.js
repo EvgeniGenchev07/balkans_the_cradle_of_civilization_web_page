@@ -12,7 +12,7 @@ const card_model=(data,id)=>`
                 <div class="back">
                 <div class="inner">
                     <p>${data.info}</p>
-                    <button  id="${id}" class="btnartf"><span>Open</span><span>Read more</span></button>
+                    <button  id="${id}" class="btnartf"><span>Отвори</span><span>Прочети повече</span></button>
                 </div>
             </div>
         </div> 
