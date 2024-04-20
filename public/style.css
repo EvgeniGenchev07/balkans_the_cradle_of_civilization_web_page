@@ -8,6 +8,12 @@ header {
   padding: 20px;
   text-align: center;
 }
+*{
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+}
 body {
 color: #4e5e72;
 font-family: monospace;
