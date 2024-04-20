@@ -8,6 +8,9 @@
   align-items: normal; 
   height: 100vh;
 }
+body{
+  overflow-x: hidden;
+}
   .artifact{
     align-items: center;
     justify-content: center;
