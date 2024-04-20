@@ -8,10 +8,7 @@ header {
   padding: 20px;
   text-align: center;
 }
-*{
-  overflow-x: hidden;
-}
-html{
+  html{
   overflow-x: hidden;
 }
 body {
