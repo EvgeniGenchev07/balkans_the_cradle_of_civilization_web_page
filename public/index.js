@@ -59,6 +59,21 @@ const special_paragraph_model=data=>`
                           Freedom is what you do with what's been done to you
                         </blockquote>
                       </article>`
+const button_functions =()=>{
+  document.querySelectorAll('.info-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var btnTarget = this.getAttribute('data-target');
+        var infoBox = document.getElementById(btnTarget);
+        infoBox.classList.add('info-visible');
+    });
+});
+document.querySelectorAll('.close-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var openInfoBox = this.closest('.info');
+        openInfoBox.classList.remove('info-visible');
+    });
+});
+}
 const fetch_and_display= object_name=>{
     fetch('./assets/index_data.json')
   .then((response) => response.json())
@@ -69,26 +84,7 @@ const fetch_and_display= object_name=>{
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(page_data));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
-    
-    $(document).ready(function() {
-		var $infoBtns = $('.info-button'),
-			$closeInfoBtn = $('.close-btn');
-		$infoBtns.each(function() {
-			var $this = $(this),
-				$btnTarget = $this.data('target'),
-				$infoBox = $('#' + $btnTarget);
-			$this.on('click', function() {
-				$infoBox.toggleClass('info-visible');
-        console.log('click')
-	
-			}); //end click
-		}); //end each
-		$closeInfoBtn.on('click', function() {
-			var $openInfoBox = $(this).parent('.info');
-			$openInfoBox.toggleClass('info-visible');
-		});
-	
-	});
+    button_functions();
   });
 }
 fetch_and_display('ancient_tooth');
