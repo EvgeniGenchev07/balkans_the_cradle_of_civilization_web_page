@@ -57,15 +57,15 @@
                 <div class="side">
                     <h1>Формуляр</h1>
                     <p>
-                        <textarea placeholder="Вашето съобщение" name="data[message]"></textarea>
+                        <textarea placeholder="Вашето съобщение" name="data[message]" required></textarea>
                     </p>
                 </div>
                     <div class="side">
                         <p>
-                            <input id="name" type="text" name="data[name]" placeholder="Вашето име">
+                            <input id="name" type="text" name="data[name]" placeholder="Вашето име" required>
                         </p>
                         <p>
-                            <input id="email" type="email" name="data[email]" placeholder="Вашият имейл">
+                            <input id="email" type="email" name="data[email]" placeholder="Вашият имейл" required>
                         </p>
                         <p>
                             <button id="sendLetter" type="submit">Изпрати</button>
@@ -88,23 +88,11 @@ if (form) {
         fetch(form.action, {
             method: "POST",
             body: new FormData(document.getElementById("sheetdb-form"))
-        }).then(response => {
-            return response.json();
         }).then(data => {
             console.log(data);
             document.body.classList.add("sent");
-            var refreshButton = document.createElement("button");
-            refreshButton.textContent = "Refresh";
-            refreshButton.style.position="absolute";
-            /*refreshButton.style.top="12cm";
-            refreshButton.style.left="16.5cm";*/
-            refreshButton.style.textAlign="center";
-            refreshButton.classList.add("refresh-button");
-            refreshButton.addEventListener("click", function() {
-                location.reload();
-            });
-            document.body.appendChild(refreshButton);
         }).catch(error => {
+            window.alert('Грешка! Твоето съобщение не беше изпратено.')
             console.error('Error:', error);
         });
     });
