@@ -8,7 +8,9 @@
   align-items: normal; 
   height: 100vh;
 }
-
+body{
+  margin: auto;
+  }
 .cols {
   display: -webkit-box;
   display: -ms-flexbox;
