@@ -11,6 +11,9 @@
 body{
   margin: auto;
   }
+  .artifact{
+    margin: 0 auto;
+  }
 .cols {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,8 +1,12 @@
 
 html,body{
   background-color: #1d1d1b;
-  overflow-x: hidden;
   font-family: Georgia, serif;
+  height: auto;
+}
+footer{
+  position:fixed;
+  bottom: 0 ;
 }
 @font-face {
   font-family: 'ESL Legend';
