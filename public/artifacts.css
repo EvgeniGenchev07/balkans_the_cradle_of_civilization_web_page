@@ -12,7 +12,9 @@ body{
   margin: auto;
   }
   .artifact{
-    margin: 0 auto;
+    margin: 3% auto;
+    width: 90%;
+    height: 100%;
   }
 .cols {
   display: -webkit-box;
