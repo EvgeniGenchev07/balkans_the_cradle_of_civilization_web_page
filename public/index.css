@@ -192,37 +192,37 @@ header nav ul li:hover a {
     -moz-transform: translateZ(-800px) rotateY(-180deg)
 }
 
-.cube.reverse-left .left {
+.cube.reverse-right .right {
     transform: translateX(-800px) rotateY(-90deg);
     -webkit-transform: translateX(-800px) rotateY(-90deg);
     -moz-transform: translateX(-800px) rotateY(-90deg)
 }
 
-.cube.reverse-right {
+.cube.reverse-left {
     transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
     -webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
     -moz-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg)
 }
 
-.cube.reverse-right .right {
+.cube.reverse-left .left {
     transform: translateX(800px) rotateY(90deg);
     -webkit-transform: translateX(800px) rotateY(90deg);
     -moz-transform: translateX(800px) rotateY(90deg)
 }
 
-.cube.reverse-top {
+.cube.reverse-bottom {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
     -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
     -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
 }
 
-.cube.reverse-top .top {
+.cube.reverse-bottom .bottom {
     transform: translateY(-400px) rotateX(90deg);
     -webkit-transform: translateY(-400px) rotateX(90deg);
     -moz-transform: translateY(-400px) rotateX(90deg)
 }
 
-.cube.reverse-bottom .bottom {
+.cube.reverse-top .top {
     transform: translateY(400px) rotateX(-90deg);
     -webkit-transform: translateY(400px) rotateX(-90deg);
     -moz-transform: translateY(400px) rotateX(-90deg)
@@ -270,26 +270,10 @@ header nav ul li:hover a {
     -moz-transform: translateZ(800px)
 }
 
-.left:not(.active) {
+.right:not(.active) {
     transform: translateX(-800px) rotateY(-90deg);
     -webkit-transform: translateX(-800px) rotateY(-90deg);
     -moz-transform: translateX(-800px) rotateY(-90deg)
-}
-
-.left .active {
-    transform: translateZ(800px);
-    -webkit-transform: translateZ(800px);
-    -moz-transform: translateZ(800px)
-}
-
-.right {
-    background: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
-}
-
-.right:not(.active) {
-    transform: translateX(800px) rotateY(90deg);
-    -webkit-transform: translateX(800px) rotateY(90deg);
-    -moz-transform: translateX(800px) rotateY(90deg)
 }
 
 .right .active {
@@ -298,29 +282,45 @@ header nav ul li:hover a {
     -moz-transform: translateZ(800px)
 }
 
-.top {
-   background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+.left {
+    background: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
 }
 
-.top:not(.active) {
-    transform: translateY(-400px) rotateX(90deg);
-    -webkit-transform: translateY(-400px) rotateX(90deg);
-    -moz-transform: translateY(-400px) rotateX(90deg)
+.left:not(.active) {
+    transform: translateX(800px) rotateY(90deg);
+    -webkit-transform: translateX(800px) rotateY(90deg);
+    -moz-transform: translateX(800px) rotateY(90deg)
 }
 
-.top .active {
+.left .active {
     transform: translateZ(800px);
     -webkit-transform: translateZ(800px);
     -moz-transform: translateZ(800px)
 }
 
+.bottom {
+   background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+}
+
 .bottom:not(.active) {
+    transform: translateY(-400px) rotateX(90deg);
+    -webkit-transform: translateY(-400px) rotateX(90deg);
+    -moz-transform: translateY(-400px) rotateX(90deg)
+}
+
+.bottom .active {
+    transform: translateZ(800px);
+    -webkit-transform: translateZ(800px);
+    -moz-transform: translateZ(800px)
+}
+
+.top:not(.active) {
     transform: translateY(400px) rotateX(-90deg);
     -webkit-transform: translateY(400px) rotateX(-90deg);
     -moz-transform: translateY(400px) rotateX(-90deg)
 }
 
-.bottom .active {
+.top .active {
     transform: translateZ(800px);
     -webkit-transform: translateZ(800px);
     -moz-transform: translateZ(800px)
