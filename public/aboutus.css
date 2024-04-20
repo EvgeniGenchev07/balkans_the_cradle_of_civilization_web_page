@@ -4,6 +4,9 @@
     align-items: center;
     margin: 50px auto;
 }
+body,html{
+    overflow-x: hidden;
+}
 footer{
     position:fixed;
     }
