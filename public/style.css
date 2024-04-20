@@ -12,6 +12,7 @@ body {
 color: #4e5e72;
 font-family: monospace;
 overflow-y: auto;
+overflow-x: hidden;
 padding-bottom: 6.74rem;
 }
 
@@ -49,7 +50,7 @@ position:relative;
     height: 4.5rem; /*5*/
     width: 4.5rem;
     text-align: center;
-    background-color:var(--button_color);
+    background-color:inherit;
     border-radius: 50%;
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
@@ -71,13 +72,16 @@ position:relative;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background: #4A676A;
+    background: transparent;
     background-size: cover;
     background-position: center;
     z-index: 100;
     transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+    display: block;
+  }
+  .show{
+    background: #4A676A;
 }
-
 @media screen and (min-width: 768px) {
     .navigation__background {
         top: 4.5rem;

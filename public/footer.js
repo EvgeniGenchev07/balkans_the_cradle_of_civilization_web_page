@@ -8,3 +8,6 @@ class Footer extends HTMLElement {
     }
   }
   customElements.define('main-footer', Footer);
+  document.getElementById("nav-toggle").addEventListener('click', ()=>{
+    document.getElementById("nav_background").classList.toggle("show");
+  });
