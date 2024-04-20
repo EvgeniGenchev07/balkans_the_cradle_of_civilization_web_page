@@ -44,11 +44,11 @@ li {
 }
 
 .act-table {
-    display: table
+    display: table;
 }
 
 .act-table-cell {
-    display: table-cell
+    display: table-cell;
 }
 
 a,
@@ -62,7 +62,9 @@ a:active {
 .text-center {
     text-align: center
 }
-
+.hide{
+    display: none;
+}
 .text-left {
     text-align: left
 }
@@ -86,9 +88,10 @@ a:active {
 header {
     position: fixed;
     top: 8px;
-    left: 0;
-    right: 0;
+    width: 50%;
     z-index: 100;
+    left: 25%;
+    right: auto;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s
@@ -382,7 +385,7 @@ header nav ul li:hover a {
     color: #fff;
     padding: 20px;
 }
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -391,7 +394,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
+} */
 @import url(https://fonts.googleapis.com/css?family=Yellowtail|Merriweather:300italic,300);
 *,
 *:before,
@@ -413,9 +416,15 @@ body {
 	/* CSS pattern by Lea Verou:
   http://lea.verou.me/css3patterns/#starry-night
   */
-	background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
-	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
 }
 
 h1,
@@ -526,6 +535,8 @@ button.info-button:focus {
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	margin-bottom: 20px;
+    pointer-events: all;
+    cursor: pointer;
 	position: relative;
 }
 
