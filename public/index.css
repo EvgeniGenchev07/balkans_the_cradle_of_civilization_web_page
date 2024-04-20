@@ -299,8 +299,14 @@ header nav ul li:hover a {
 }
 
 .bottom {
-   background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
-}
+    background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+ }
+ .top {
+    background-image: linear-gradient( 135deg, #c7b10a 10%, #A657A1 80%);
+ }
+ .right {
+    background-image: linear-gradient( 135deg, #02d12b 10%, #124acd 80%);
+ }
 
 .bottom:not(.active) {
     transform: translateY(-400px) rotateX(90deg);
