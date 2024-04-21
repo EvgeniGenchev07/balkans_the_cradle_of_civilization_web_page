@@ -12,7 +12,6 @@ body {
 color: #4e5e72;
 font-family: monospace;
 padding-bottom: 6.74rem;
-overflow: scroll;
 }
 ::-webkit-scrollbar {
   width: 20px;
@@ -25,7 +24,7 @@ overflow: scroll;
   background: linear-gradient(-45deg, red, blue, green,yellow);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-  border-radius: 20vw;
+  border-radius: 10px;
   border: 1vh solid transparent;
   background-clip: content-box;
 }
