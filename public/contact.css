@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #c8e7d8;
-  color: #4e5e72;
+  color:white;
   text-align: center;
   font-family: monospace;
   overflow: hidden;
@@ -266,5 +265,20 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
+}
+body{
+background: linear-gradient(45deg, blue, green, yellow, red);
+	background-repeat: no-repeat;
+	background-size: 400% 100%;
+	backdrop-filter: brightness(40%);
+	margin: 0;
+	min-height: 100vh;
+	animation: slide 20s infinite;
+}
+
+@keyframes slide {
+	50% {
+		background-position: 100%;
+	}
 }
 
