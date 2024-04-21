@@ -24,9 +24,6 @@ header{
 }
 body{
   overflow-x: hidden;
-  .artifact{
-    display: block;
-  }
 }
 .artifact{
   position: relative;
