@@ -21,10 +21,6 @@ body {
     font-size: medium;
     background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
 }
-section{
-    overflow: auto;
-    overflow-x: hidden;
-}
 
 header {
     animation: slideDown 1s ease-in-out;
@@ -131,7 +127,9 @@ header nav ul li:hover a {
 }
 
 .page {
-    background-color: rgba(0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .page .act-table {
@@ -192,37 +190,37 @@ header nav ul li:hover a {
     -moz-transform: translateZ(-800px) rotateY(-180deg)
 }
 
-.cube.reverse-right .right {
+.cube.reverse-left .left {
     transform: translateX(-800px) rotateY(-90deg);
     -webkit-transform: translateX(-800px) rotateY(-90deg);
     -moz-transform: translateX(-800px) rotateY(-90deg)
 }
 
-.cube.reverse-left {
+.cube.reverse-right {
     transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
     -webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
     -moz-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg)
 }
 
-.cube.reverse-left .left {
+.cube.reverse-right .right {
     transform: translateX(800px) rotateY(90deg);
     -webkit-transform: translateX(800px) rotateY(90deg);
     -moz-transform: translateX(800px) rotateY(90deg)
 }
 
-.cube.reverse-bottom {
+.cube.reverse-top {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
     -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
     -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
 }
 
-.cube.reverse-bottom .bottom {
+.cube.reverse-top .top {
     transform: translateY(-400px) rotateX(90deg);
     -webkit-transform: translateY(-400px) rotateX(90deg);
     -moz-transform: translateY(-400px) rotateX(90deg)
 }
 
-.cube.reverse-top .top {
+.cube.reverse-bottom .bottom {
     transform: translateY(400px) rotateX(-90deg);
     -webkit-transform: translateY(400px) rotateX(-90deg);
     -moz-transform: translateY(400px) rotateX(-90deg)
@@ -237,7 +235,8 @@ header nav ul li:hover a {
     right: 0;
     width: 100%;
     height: 100%;
-    /*color: #666;*/
+    color: #666;
+    font-size: 18px;
     text-align: center;
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
@@ -245,7 +244,7 @@ header nav ul li:hover a {
 }
 
 .front {
-   background: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+   background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
 }
 
 .front.active {
@@ -255,7 +254,7 @@ header nav ul li:hover a {
 }
 
 .back {
-   background: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+   background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
 }
 
 .back:not(.active) {
@@ -270,26 +269,10 @@ header nav ul li:hover a {
     -moz-transform: translateZ(800px)
 }
 
-.right:not(.active) {
+.left:not(.active) {
     transform: translateX(-800px) rotateY(-90deg);
     -webkit-transform: translateX(-800px) rotateY(-90deg);
     -moz-transform: translateX(-800px) rotateY(-90deg)
-}
-
-.right .active {
-    transform: translateZ(800px);
-    -webkit-transform: translateZ(800px);
-    -moz-transform: translateZ(800px)
-}
-
-.left {
-    background: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
-}
-
-.left:not(.active) {
-    transform: translateX(800px) rotateY(90deg);
-    -webkit-transform: translateX(800px) rotateY(90deg);
-    -moz-transform: translateX(800px) rotateY(90deg)
 }
 
 .left .active {
@@ -298,35 +281,45 @@ header nav ul li:hover a {
     -moz-transform: translateZ(800px)
 }
 
-.bottom {
-    background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
- }
- .top {
-    background-image: linear-gradient( 135deg, #c7b10a 10%, #A657A1 80%);
- }
- .right {
-    background-image: linear-gradient( 135deg, #02d12b 10%, #124acd 80%);
- }
-
-.bottom:not(.active) {
-    transform: translateY(-400px) rotateX(90deg);
-    -webkit-transform: translateY(-400px) rotateX(90deg);
-    -moz-transform: translateY(-400px) rotateX(90deg)
+.right {
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
 }
 
-.bottom .active {
+.right:not(.active) {
+    transform: translateX(800px) rotateY(90deg);
+    -webkit-transform: translateX(800px) rotateY(90deg);
+    -moz-transform: translateX(800px) rotateY(90deg)
+}
+
+.right .active {
     transform: translateZ(800px);
     -webkit-transform: translateZ(800px);
     -moz-transform: translateZ(800px)
 }
 
+.top {
+   background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+}
+
 .top:not(.active) {
+    transform: translateY(-400px) rotateX(90deg);
+    -webkit-transform: translateY(-400px) rotateX(90deg);
+    -moz-transform: translateY(-400px) rotateX(90deg)
+}
+
+.top .active {
+    transform: translateZ(800px);
+    -webkit-transform: translateZ(800px);
+    -moz-transform: translateZ(800px)
+}
+
+.bottom:not(.active) {
     transform: translateY(400px) rotateX(-90deg);
     -webkit-transform: translateY(400px) rotateX(-90deg);
     -moz-transform: translateY(400px) rotateX(-90deg)
 }
 
-.top .active {
+.bottom .active {
     transform: translateZ(800px);
     -webkit-transform: translateZ(800px);
     -moz-transform: translateZ(800px)
@@ -753,3 +746,229 @@ article:nth-child(5) .btn-lg {
 		margin-top: 30%;
 	}
 }
+/*3d page baners view*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.banners_section { 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:90%;
+  margin:0 auto;
+  color:#222;
+  text-transform:uppercase;
+  font-size:2.8em;
+  font-weight:700;
+}
+.full { height:100vh; background:#E0E0E0 }
+.half { height:50vh; background:#E0E0E0 }
+.mini { height:25vh; background:#E0E0E0 }
+
+.banner { color: #E8E8E8; 
+  display:flex;
+  align-items:stretch;
+}
+
+/* first banner */
+
+.banner3d-1 {
+    width:100%;
+    perspective: 700px;
+    -webkit-transform-style:flat; /* why would I do that? well there is a very strange bug with safari, and it fixed it... */
+    transform-style: preserve-3d;
+}
+
+.banner3d-1-front {
+    padding:50px;
+    background:#222;
+    transform: translatez(50px);
+    transform-style: preserve-3d;
+}
+
+.banner3d-1-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #BFBFBF;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(90deg);
+}
+
+.banner3d-1-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #BFBFBF;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(-90deg);
+}
+
+/* second banner */
+
+.banner3d-2 {
+    width:100%;
+    perspective: 700px;
+    -webkit-transform-style:flat;
+    transform-style: preserve-3d;
+  z-index:-1;
+}
+
+.banner3d-2-front {
+    padding:50px;
+    background:#222;
+    transform: translatez(-50px);
+    transform-style: preserve-3d;
+}
+
+.banner3d-2-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #BFBFBF;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(-90deg);
+}
+
+.banner3d-2-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #BFBFBF;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(90deg);
+}
+
+/* 3rd banner */
+
+.banner3d-3 {
+    width:50%;
+    perspective: 700px;
+    -webkit-transform-style:flat;
+    transform-style: preserve-3d;
+}
+
+.banner3d-3-front {
+    padding:100px 25px;
+    text-align:center;
+    background:#222;
+    transform: translatez(50px);
+    transform-style: preserve-3d;
+}
+
+.banner3d-3-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #404040;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(90deg);
+}
+
+.banner3d-3-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #404040;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(-90deg);
+}
+
+.image {
+  width:50%;
+  background:url(https://source.unsplash.com/IyaNci0CyRk/600x600) no-repeat;
+  background-size:cover;
+  background-position:center;
+  box-shadow: inset 25px 0px 20px 10px rgba(0,0,0,0.41)
+}
+
+
+/* fourth banner */
+
+.banner3d-4 {
+    width:60%;
+    perspective: 700px;
+    -webkit-transform-style:flat;
+    transform-style: preserve-3d;
+  z-index:-1;
+}
+
+.banner3d-4-front {
+    padding:25px;
+    background:#222;
+    transform: translatez(-50px);
+    transform-style: preserve-3d;
+}
+
+.banner3d-4-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #BFBFBF;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(-90deg);
+}
+
+.banner3d-4-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #BFBFBF;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(90deg);
+}
+
+.image2 {
+  width:40%;
+  background:url(https://source.unsplash.com/gJJhG4gM7NA/600x600) no-repeat;
+  background-size:cover;
+  background-position:center center;
+  border:20px solid #E0E0E0;
+  box-sizing:border-box;
+}
+
+@media (max-width: 991px) {
+  section {
+    font-size:2em;
+  }
+  .banner {
+    flex-direction:column
+  }
+  .banner3d-3, .banner3d-4 {
+    width:100%
+  }
+  .image, .image2 {
+	  width:100%;
+	  height:300px;
+  }
+}
+html, body {
+    margin: 0;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    font-family: "Signika Negative", sans-serif, Arial;
+  }
