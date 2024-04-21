@@ -760,7 +760,16 @@ article:nth-child(5) .btn-lg {
   font-size:2.8em;
   font-weight:700;
 }
-.full { height:100vh; background:#E0E0E0 }
+.full { 
+    height:100vh;
+    width: 100vw; 
+    background:#E0E0E0;
+    background: #444 var(--full-image) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	margin-bottom: 0;
+}
 .half { height:50vh; background:#E0E0E0 }
 .mini { height:25vh; background:#E0E0E0 }
 
@@ -774,7 +783,7 @@ article:nth-child(5) .btn-lg {
 .banner3d-1 {
     width:100%;
     perspective: 700px;
-    -webkit-transform-style:flat; /* why would I do that? well there is a very strange bug with safari, and it fixed it... */
+    -webkit-transform-style:flat;
     transform-style: preserve-3d;
 }
 
@@ -893,7 +902,7 @@ article:nth-child(5) .btn-lg {
 
 .image {
   width:50%;
-  background:url(https://source.unsplash.com/IyaNci0CyRk/600x600) no-repeat;
+  background:var(--image) no-repeat;
   background-size:cover;
   background-position:center;
   box-shadow: inset 25px 0px 20px 10px rgba(0,0,0,0.41)
@@ -943,7 +952,7 @@ article:nth-child(5) .btn-lg {
 
 .image2 {
   width:40%;
-  background:url(https://source.unsplash.com/gJJhG4gM7NA/600x600) no-repeat;
+  background:var(--image2) no-repeat;
   background-size:cover;
   background-position:center center;
   border:20px solid #E0E0E0;
