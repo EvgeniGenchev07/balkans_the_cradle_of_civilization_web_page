@@ -8,6 +8,10 @@
   align-items: normal; 
   height: 100vh;
 }
+header{
+  background: inherit;
+  position: sticky;
+}
 body{
   overflow-x: hidden;
 }
