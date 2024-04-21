@@ -125,16 +125,50 @@ perspectiveOrigin: "left 100vh",
 ease: "none"
 });
 }
+const full_banner = data=>`<section class="full jumbotron"></section>`
+const banner_1=data=>`<section class="banner banners_section">
+<div class="banner3d-1">
+  <div class="banner3d-1-front">
+    ${data}
+  </div>
+</div>
+</section>`
+const banner_2=data=>`<section class="mini banners_section">${data}</section>`
+const banner_3=data=>`<section class="banner banners_section">
+<div class="banner3d-2">
+  <div class="banner3d-2-front">
+    ${data}
+  </div>
+</div>
+</section>`
+const banner_4=data=>`<section class="half banners_section">${data}</section>`
+const banner_5=data=>`<section class="banner banners_section">
+<div class="banner3d-3">
+  <div class="banner3d-3-front">
+    ${data.info}
+  </div>
+</div>
+<div class="image" style="--image:${data.image}"></div>
+</section>`
+const banner_6=data=>`<section class="half banners_section">${data}</section>`
+const banner_7=data=>`<section class="banner banners_section">
+<div class="image2" style="--image2:${data.image}"></div>
+<div class="banner3d-4">
+  <div class="banner3d-4-front">
+  ${data.info}
+  </div>
+</div>
+</section>`
+const banner_8=data=>`<section class="full banners_section">${data}</section>`
+const page_model=(banner_1,banner_2,banner_3,banner_4,banner_5,banner_6,banner_7,banner_8)=>banner_1+=banner_2+banner_3+banner_4+banner_5+banner_6+banner_7+banner_8;
 const fetch_and_display= object_name=>{
     fetch('./assets/index_data.json')
   .then((response) => response.json())
   .then(data=>{
       var page_data = data[object_name];
-    document.getElementById(object_name+'_jumbotron').insertAdjacentHTML('beforeend',basic_information_model(object_name,page_data.basic_information));
-    document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.first_paragraph));
-    document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
-    document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(page_data));
-    document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
+    document.getElementById(object_name+'_page').insertAdjacentHTML('afterbegin',page_model(banner_1(page_data.banner_1),banner_2(page_data.banner_2),banner_3(page_data.banner_3),banner_4(page_data.banner_4),banner_5(page_data.banner_5),banner_6(page_data.banner_6),banner_7(page_data.banner_7),banner_8(page_data.banner_8)));
+    
+    banners_3d_script();
     button_functions();
 
   });
@@ -143,4 +177,3 @@ fetch_and_display('ancient_tooth');
 fetch_and_display('caves');
 fetch_and_display('varna');
 fetch_and_display('alphabet');
-banners_3d_script();
