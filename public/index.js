@@ -125,7 +125,7 @@ perspectiveOrigin: "left 100vh",
 ease: "none"
 });
 }
-const full_banner = data=>`<section class="full jumbotron"></section>`
+const full_banner = data=>`<section class="full" style="--full-image:${data.image}"></section>`
 const banner_1=data=>`<section class="banner banners_section">
 <div class="banner3d-1">
   <div class="banner3d-1-front">
