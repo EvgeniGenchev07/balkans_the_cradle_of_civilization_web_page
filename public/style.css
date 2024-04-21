@@ -209,8 +209,19 @@ position:relative;
     .navigation__icon::before,
     .navigation__icon::after {
         width: 2rem;
-        height: 1.5px;
+        height:  1.5px;
     }
+}
+@media (max-width: 900px) {
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+      width: 2rem;
+      height: 1.5px;
+      margin-top: auto;
+      display: inline-block;
+      top: 35%;
+  }
 }
 
 .navigation__icon::before,
