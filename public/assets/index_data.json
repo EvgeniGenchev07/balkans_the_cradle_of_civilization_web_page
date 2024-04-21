@@ -22,6 +22,32 @@
         "third_paragraph":{
         "paragraph_title": "paragraph_title3",
         "paragraph_information": "Varna is a city in Bulgaria"
+        },
+        "banner_1":{
+            "data":"${}"
+        },
+        "banner_2":{
+            "data":"${}"
+        },
+        "banner_3":{
+            "data":"${}"
+        },
+        "banner_4":{
+            "data":"${}"
+        },
+        "banner_5":{
+          "info":"ok",
+          "image":""
+        },
+        "banner_6":{
+            "data":"${}"
+        },
+        "banner-7":{
+            "image":"",
+            "info":""
+        },
+        "banner_8":{
+            "data":"${}"
         }
     },
     "caves":{
@@ -33,8 +59,8 @@
             "information_title_3": "Varna",
             "information_text_3": "Varna is a city in Bulgaria",
             "name": "Varna",
-            "description_first_half": "Varna is a city",
-            "description_second_half": "in Bulgaria"
+            "description_first_half": "Пещерите Магурата и Козарника - извор на неизчерпаемо знание",
+            "description_second_half": "Откритите артефакти променят хода на световната история"
         },
         "first_paragraph":{
         "paragraph_title": "Varna",
@@ -47,22 +73,48 @@
         "third_paragraph":{
         "paragraph_title": "Varna",
         "paragraph_information": "Varna is a city in Bulgaria"
+        },
+        "banner_1":{
+            "data":"${}"
+        },
+        "banner_2":{
+            "data":"${}"
+        },
+        "banner_3":{
+            "data":"${}"
+        },
+        "banner_4":{
+            "data":"${}"
+        },
+        "banner_5":{
+          "info":"ok",
+          "image":""
+        },
+        "banner_6":{
+            "data":"${}"
+        },
+        "banner-7":{
+            "image":"",
+            "info":""
+        },
+        "banner_8":{
+            "data":"${}"
         }
     },
     "ancient_tooth":{
         "basic_information":{
-            "information_title_1": "Varna",
+            "information_title_1": "дн",
             "information_text_1": "Varna is a city in Bulgaria",
             "information_title_2": "Varna",
             "information_text_2": "Varna is a city in Bulgaria",
             "information_title_3": "Varna",
             "information_text_3": "Varna is a city in Bulgaria",
-            "name": "Varna",
-            "description_first_half": "Varna is a city",
-            "description_second_half": "in Bulgaria"
+            "name": "ок",
+            "description_first_half": "Културата Варна и най-старото обработено злато в света",
+            "description_second_half": "Забранената история"
         },
         "first_paragraph":{
-        "paragraph_title": "Varna",
+        "paragraph_title": "V",
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "second_paragraph":{
@@ -72,6 +124,32 @@
         "third_paragraph":{
         "paragraph_title": "Varna",
         "paragraph_information": "Varna is a city in Bulgaria"
+        },
+        "banner_1":{
+            "data":"${}"
+        },
+        "banner_2":{
+            "data":"${}"
+        },
+        "banner_3":{
+            "data":"${}"
+        },
+        "banner_4":{
+            "data":"${}"
+        },
+        "banner_5":{
+          "info":"ok",
+          "image":""
+        },
+        "banner_6":{
+            "data":"${}"
+        },
+        "banner-7":{
+            "image":"",
+            "info":""
+        },
+        "banner_8":{
+            "data":"${}"
         }
     },
     "alphabet":{
@@ -97,6 +175,32 @@
         "third_paragraph":{
         "paragraph_title": "Varna",
         "paragraph_information": "Varna is a city in Bulgaria"
+        },
+        "banner_1":{
+            "data":"${}"
+        },
+        "banner_2":{
+            "data":"${}"
+        },
+        "banner_3":{
+            "data":"${}"
+        },
+        "banner_4":{
+            "data":"${}"
+        },
+        "banner_5":{
+          "info":"ok",
+          "image":""
+        },
+        "banner_6":{
+            "data":"${}"
+        },
+        "banner-7":{
+            "image":"",
+            "info":""
+        },
+        "banner_8":{
+            "data":"${}"
         }
     }
 }
