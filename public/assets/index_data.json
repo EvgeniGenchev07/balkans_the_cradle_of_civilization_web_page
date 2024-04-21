@@ -24,7 +24,8 @@
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "banner_1":{
-            "data":"${}"
+            "data":"${}",
+            "image":""
         },
         "banner_2":{
             "data":"${}"
@@ -42,7 +43,7 @@
         "banner_6":{
             "data":"${}"
         },
-        "banner-7":{
+        "banner_7":{
             "image":"",
             "info":""
         },
