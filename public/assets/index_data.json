@@ -24,20 +24,18 @@
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "banner_1":{
-            "data":"${}",
+            "data":"sfdfsf",
             "image":""
         },
         "banner_2":{
-            "data":"${}"
+            "data":"djfsd"
         },
-        "banner_3":{
-            "data":"${}"
-        },
+        "banner_3":"awdaijd",
         "banner_4":{
-            "data":"${}"
+            "data":"adadhaudaw"
         },
         "banner_5":{
-          "info":"ok",
+          "info":"fsfsfsf",
           "image":""
         },
         "banner_6":{
@@ -45,7 +43,7 @@
         },
         "banner_7":{
             "image":"",
-            "info":""
+            "info":"dfdsf"
         },
         "banner_8":{
             "data":"${}"
@@ -76,6 +74,7 @@
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "banner_1":{
+            "image":"",
             "data":"${}"
         },
         "banner_2":{
@@ -127,6 +126,7 @@
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "banner_1":{
+            "image":"",
             "data":"${}"
         },
         "banner_2":{
@@ -178,6 +178,7 @@
         "paragraph_information": "Varna is a city in Bulgaria"
         },
         "banner_1":{
+            "image":"",
             "data":"${}"
         },
         "banner_2":{
