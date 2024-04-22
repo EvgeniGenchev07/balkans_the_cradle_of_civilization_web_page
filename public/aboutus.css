@@ -7,6 +7,7 @@ body,html{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0.4cm;
   }
 
   .profile-card {
@@ -88,7 +89,7 @@ body {
     margin-top: 25%;
     overflow-x: hidden;
     background-color: #fff;
-    padding: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
