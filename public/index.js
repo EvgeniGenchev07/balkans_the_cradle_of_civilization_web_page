@@ -52,7 +52,7 @@ const special_paragraph_model=data=>`
 <article class="col-md-12">
                         <div class="overlay"></div>
                         <blockquote>
-                          Freedom is what you do with what's been done to you
+                          ${data}
                         </blockquote>
                       </article>`
 const button_functions =()=>{
@@ -78,7 +78,7 @@ const fetch_and_display= object_name=>{
     document.getElementById(object_name+'_jumbotron').insertAdjacentHTML('beforeend',basic_information_model(object_name,page_data.basic_information));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.first_paragraph));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
-    document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(page_data));
+    document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(page_data.special_paragraph));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
     button_functions();
   });
