@@ -80,26 +80,6 @@ const fetch_and_display= object_name=>{
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(page_data));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
-
-    $(document).ready(function() {
-		var $infoBtns = $('.info-button'),
-			$closeInfoBtn = $('.close-btn');
-		$infoBtns.each(function() {
-			var $this = $(this),
-				$btnTarget = $this.data('target'),
-				$infoBox = $('#' + $btnTarget);
-			$this.on('click', function() {
-				$infoBox.toggleClass('info-visible');
-        console.log('click')
-
-			}); //end click
-		}); //end each
-		$closeInfoBtn.on('click', function() {
-			var $openInfoBox = $(this).parent('.info');
-			$openInfoBox.toggleClass('info-visible');
-		});
-
-	});
     button_functions();
   });
 }

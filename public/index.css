@@ -425,8 +425,9 @@ a:active {
 header {
     position: fixed;
     top: 8px;
-    left: 0;
-    right: 0;
+	width: 50vw;
+	left: 25vw;
+    right: 25vw;
     z-index: 100;
     transition: 1s;
     -webkit-transition: 1s;
