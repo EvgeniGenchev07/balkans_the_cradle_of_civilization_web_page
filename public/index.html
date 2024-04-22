@@ -87,9 +87,9 @@
   </div>
     </section>
     
-    <section class="page face top" id="varna" style="z-index: 989;">
-      <div class="act-table text-center" style="z-index: 999;">
-        <div class="act-table-cell ver-middle" id="varna_page" style="z-index: 9999;">
+    <section class="page face top" id="varna">
+      <div class="act-table text-center">
+        <div class="act-table-cell ver-middle" id="varna_page">
           <main-footer></main-footer>
         </div>
       </div>
@@ -115,6 +115,57 @@
   </div>
 </div>
 <!-- partial -->
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+gsap.set(".banner3d-1", { perspectiveOrigin: "center -100vh"});
+gsap.set(".banner3d-2", { perspectiveOrigin: "center -100vh"});
+gsap.set(".banner3d-3", { perspectiveOrigin: "center -100vh"});
+gsap.set(".banner3d-4", { perspectiveOrigin: "left -100vh"});
+
+gsap.to(".banner3d-1", {
+scrollTrigger: {
+trigger: ".banner3d-1",
+scrub: true,
+start: "top bottom",
+end: "bottom top"
+},
+perspectiveOrigin: "center 100vh", 
+ease: "none"
+});
+
+gsap.to(".banner3d-2", {
+scrollTrigger: {
+trigger: ".banner3d-2",
+scrub: true,
+start: "top bottom",
+end: "bottom top"
+},
+perspectiveOrigin: "center 100vh", 
+ease: "none"
+});
+
+gsap.to(".banner3d-3", {
+scrollTrigger: {
+trigger: ".banner3d-3",
+scrub: true,
+start: "top bottom",
+end: "bottom top"
+},
+perspectiveOrigin: "center 100vh", 
+ease: "none"
+});
+
+gsap.to(".banner3d-4", {
+scrollTrigger: {
+trigger: ".banner3d-4",
+scrub: true,
+start: "top bottom",
+end: "bottom top"
+},
+perspectiveOrigin: "left 100vh", 
+ease: "none"
+});
+</script>
   <script src="integration.js"></script>
   <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
   <script src="footer.js"></script>
