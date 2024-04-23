@@ -44,16 +44,12 @@ const paragraph_model=data=>`<article class="col-md-6">
 <p>
   ${data.paragraph_information}
 </p>
-<p class="text-center">
-  <a href="${data.paragraph_link}" class="btn btn-primary" target="_blank">Visit the ${data.paragraph_title} Page</a>
-</p>
+
 </article>`;
 const special_paragraph_model=data=>`
 <article class="col-md-12">
                         <div class="overlay"></div>
-                        <blockquote>
-                          ${data}
-                        </blockquote>
+                          <div class="content">${data}</div>
                       </article>`
 const button_functions =()=>{
   document.querySelectorAll('.info-button').forEach(function(button) {
