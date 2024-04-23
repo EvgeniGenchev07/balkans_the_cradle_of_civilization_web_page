@@ -730,11 +730,11 @@ header nav ul li:hover a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-	z-index: 1; /* Lower z-index to ensure the maps are on top */
+	background-color: rgba(0, 0, 0, 0.5); 
+	z-index: 1; 
   }
   
   .content {
-	position: relative; /* Ensure content div is positioned relative to its parent */
-	z-index: 2; /* Higher z-index to ensure it's above the overlay */
+	position: relative; 
+	z-index: 2; 
   }
