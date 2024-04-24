@@ -25,6 +25,7 @@ linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
 linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
 background-color: #131313;
 background-size: 20px 20px;
+overflow-y: auto;
 }
 
 h1,
@@ -88,7 +89,6 @@ button.info-button:focus {
 }
 
 .jumbotron {
-	background: #444 url(https://c6.staticflickr.com/4/3157/2612647693_fd7594d5cd_o.jpg) center center no-repeat;
 	background-size: cover;
 	position: relative;
 	min-height: 100vh;
