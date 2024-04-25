@@ -80,7 +80,13 @@ position:relative;
     border-radius: 50%;
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    cursor: pointer; 
+    border: 3px solid transparent;
+    color: #333; 
+}
+.navigation__button:hover
+{
+  animation: rainbow 3s linear infinite alternate; 
 }
 
 @media screen  and (min-width: 768px) {
@@ -340,4 +346,26 @@ position:relative;
 .navigation_backeffect li:nth-child(6n + 6) a:before {
   background: #ffeaa7;
 }
-
+@keyframes rainbow {
+  0% {
+    border-color: #ff0000; 
+  }
+  16.666% {
+    border-color: #ff7f00; 
+  }
+  33.333% {
+    border-color: #ffff00; 
+  }
+  50% {
+    border-color: #00ff00; 
+  }
+  66.666% {
+    border-color: #0000ff; 
+  }
+  83.333% {
+    border-color: #4b0082;
+  }
+  100% {
+    border-color: #9400d3; 
+  }
+}
