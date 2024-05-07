@@ -21,9 +21,10 @@
 				reverseDirection = thisElement.data('reverse-direction');
 				thisElement.parent().addClass('active').siblings().removeClass('active');
 					$('.cube').addClass('reverse-' + pageDirection);
-
 					$header.addClass('go-out');
-				$('#wrap').addClass('active');
+					$('#wrap').addClass('active');
+					var target = thisElement.data('target');
+					$('#'+target+'frame').addClass('hidemap')
 				clearTimeout(timeout);
 				timeout = setTimeout(function(){
 					$header.removeClass('go-out');

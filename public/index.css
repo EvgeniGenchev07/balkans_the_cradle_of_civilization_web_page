@@ -185,6 +185,7 @@ button.info-button:focus {
 	}
 }
 
+
 .info .close-btn {
 	display: inline-block;
 	float: right;
@@ -231,7 +232,9 @@ button.info-button:focus {
 	color: #e9c8ff;
 }
 
-
+.info-text-title{
+	font-style: normal;
+}
 /* marin content */
 
 .main {
@@ -549,6 +552,13 @@ header nav ul li:hover a {
     -moz-transform: translateY(400px) rotateX(-90deg)
 }
 
+.hidemap{
+	display: none;
+	pointer-events: none;
+	visibility: hidden;
+	position: absolute;
+}
+
 .face {
     display: block;
     position: absolute;
@@ -743,3 +753,6 @@ header nav ul li:hover a {
 	position: relative; 
 	z-index: 2; 
   }
+
+
+

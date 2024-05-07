@@ -33,7 +33,7 @@ const basic_information_model = (page,data) => `
 <!-- /.info-container -->
 <div class="overlay"></div>
 <div class="container-fluid">
-<h1 class="text-right">${data.name}</h1>
+<h1 class="text-right info-text-title">${data.name}</h1>
 <p class="lead text-right">
   ${data.description_first_half} <br> ${data.description_second_half}
 </p>
