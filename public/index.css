@@ -9,7 +9,12 @@ html {
 	font-size: 16px;
 	line-height: 1.6;
 }
-
+#alphabet{
+	z-index: 15;
+}
+#varna{
+	z-index: 10;
+}
 body {
 	font-family: 'Merriweather', serif;
 	font-size: 1rem;
