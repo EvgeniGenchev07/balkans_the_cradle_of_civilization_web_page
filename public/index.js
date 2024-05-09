@@ -1,36 +1,4 @@
 const basic_information_model = (page,data) => `
-<div class="nav-container">
-<button class="info-button" data-target="${page}_info1">${data.information_title_1}</button>
-<button class="info-button" data-target="${page}_info2">${data.information_title_2}</button>
-<button class="info-button" data-target="${page}_info3">${data.information_title_3}</button>
-</div>
-<div class="info-container">
-<div class="info" id="${page}_info1">
-  <span class="close-btn" aria-label="close button">X</span>
-  <h3 class="info-title">${data.information_title_1}</h3>
-    <p class="info-list"> ${data.information_text_1}</p>
-  <h3 class="info-title">${data.information_title_1}</h3>
-  <p class="info-list"> ${data.information_text_1}</p>
-</div>
-</div>
-<div class="info-container">
-<div class="info" id="${page}_info2">
-  <span class="close-btn" aria-label="close button">X</span>
-  <h3 class="info-title">${data.information_title_2}</h3>
-  <p class="info-list"> ${data.information_text_2}</p>
-</div>
-<!-- /.info -->
-</div>
-<!-- /.info-container -->
-<div class="info-container">
-<div class="info" id="${page}_info3">
-  <span class="close-btn" aria-label="close button">X</span>
-  <h3 class="info-title">${data.information_title_3}</h3>
-  <p class="info-list"> ${data.information_text_3}</p>
-</div>
-<!-- /.info -->
-</div>
-<!-- /.info-container -->
 <div class="overlay"></div>
 <div class="container-fluid">
 <h1 class="text-right info-text-title">${data.name}</h1>

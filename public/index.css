@@ -158,7 +158,6 @@ button.info-button:focus {
 	position: relative;
 	z-index: 2;
 }
-
 .info {
 	max-width: 100%;
 	padding: 2em;
@@ -353,6 +352,7 @@ article:nth-child(5) .btn-lg {
 		margin-top: 30%;
 	}
 }
+
 ul {
     list-style: none;
     padding: 0;
@@ -754,5 +754,9 @@ header nav ul li:hover a {
 	z-index: 2; 
   }
 
-
+  .hide_content{
+	display: none;
+	visibility: hidden;
+	pointer-events: none;
+}
 
