@@ -47,7 +47,21 @@ const fetch_and_display= object_name=>{
     button_functions();
   });
 }
+// const fetch_and_display_dublicates= object_name=>{
+//   fetch('./assets/index_data.json')
+// .then((response) => response.json())
+// .then(data=>{
+//     var page_data = data[object_name.replace('_dublicate','')];
+//   document.getElementById(object_name+'_jumbotron').insertAdjacentHTML('beforeend',basic_information_model(object_name,page_data.basic_information));
+//   document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.first_paragraph));
+//   document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
+//   document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(page_data.special_paragraph));
+//   document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
+//   button_functions();
+// });
+// }
 fetch_and_display('ancient_tooth');
 fetch_and_display('caves');
 fetch_and_display('varna');
+//fetch_and_display_dublicates('varna_dublicate');
 fetch_and_display('alphabet');
