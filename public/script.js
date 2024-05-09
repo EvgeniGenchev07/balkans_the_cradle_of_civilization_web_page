@@ -1,17 +1,12 @@
-document.getElementById('varna_anchor').addEventListener('click',()=>{
-	//document.getElementById('varna_dublicate').classList.remove('hide_content')
-	document.getElementById('wrap').classList.add('hide_content')
-	//document.getElementById('alphabet_dublicate').classList.add('hide_content')
-});
-document.getElementById('caves_anchor').addEventListener('click',()=>{
-	//document.getElementById('varna_dublicate').classList.remove('hide_content')
-	document.getElementById('wrap').classList.remove('hide_content')
-	//document.getElementById('alphabet_dublicate').classList.add('hide_content')
-});
-// {
-// 	document.getElementById('alphabet_dublicate').classList.remove('hide_content')
+// function varna_anchor_clicked(){
+// 	document.getElementById('varna_dublicate').classList.remove('hide_content')
 // 	document.getElementById('wrap').classList.add('hide_content')
-// 	document.getElementById('varna_dublicate').classList.add('hide_content')
+// 	//document.getElementById('alphabet_dublicate').classList.add('hide_content')
+// }
+// 	function alphabet_anchor_clicked(){
+//  	//document.getElementById('alphabet_dublicate').classList.remove('hide_content')
+//  	document.getElementById('wrap').classList.add('hide_content')
+//  	//document.getElementById('varna_dublicate').classList.add('hide_content')
 // }
 (function(document, window, $){
 	
@@ -29,11 +24,9 @@ document.getElementById('caves_anchor').addEventListener('click',()=>{
 			var thisElement;
 			var timeout;
 			$header.find('nav li a').click(function(event){
-			document.getElementById('wrap').classList.remove('hide_content')
-			if($(this).id==='varna_anchor') {
-				document.getElementById('wrap').classList.add('hide_content')
-				console.log(1)
-			}
+			// document.getElementById('wrap').classList.remove('hide_content');
+			// if(this.id==='varna_anchor') varna_anchor_clicked();
+			// if(this.id==='alphabet_anchor') alphabet_anchor_clicked();
 				event.preventDefault();
 					$('.cube').removeClass('reverse-' + pageDirection);
 				thisElement = $(this);
@@ -62,3 +55,4 @@ document.getElementById('caves_anchor').addEventListener('click',()=>{
 	});
 	
 })(document, window, jQuery);
+
