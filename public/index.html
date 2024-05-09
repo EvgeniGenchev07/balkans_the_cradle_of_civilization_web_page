@@ -155,7 +155,34 @@
   </div>
 </div>
 <!-- partial -->
+<script>function showCurrentPageIframe() {
+  var currentPage = window.location.href;
+  var iframes = document.querySelectorAll('.iframe-container');
+  iframes.forEach(function(iframe) {
+      iframe.style.display = 'none';
+  });
 
+  // Show the iframe corresponding to the current page
+  if (currentPage.includes('google.com/maps')) {
+    document.getElementById('varnaFrame').style.display = 'block';
+  } else if (currentPage.includes('varna_page.html')) {
+      document.getElementById('varnaFrame').style.display = 'block';
+  } else if (currentPage.includes('magura_page.html')) {
+      document.getElementById('maguraFrame').style.display = 'block';
+  } else if (currentPage.includes('kozarnika_page.html')) {
+      document.getElementById('kozarnikaFrame').style.display = 'block';
+  }
+}
+
+// Call showCurrentPageIframe function when the page loads
+window.addEventListener('load', function() {
+  showCurrentPageIframe();
+});
+
+// Call showCurrentPageIframe function when navigating back
+function navigateBack() {
+  showCurrentPageIframe();
+}</script>
 <script src="integration.js"></script>
 <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 <script src="footer.js"></script>
