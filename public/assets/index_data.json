@@ -1,12 +1,6 @@
 {
     "varna":{
         "basic_information":{
-            "information_title_1": "Varn1",
-            "information_text_1": "Varna is a city in Bulgaria",
-            "information_title_2": "Varn2",
-            "information_text_2": "Varna is a city in Bulgaria",
-            "information_title_3": "Varn3",
-            "information_text_3": "Varna is a city in Bulgaria",
             "name": "Загадките,които крие Черноморието",
             "description_first_half": "Културата Варна и най-старото обработено злато в света",
             "description_second_half": "Забранената история"
@@ -27,12 +21,6 @@
     },
     "caves":{
         "basic_information":{
-            "information_title_1": "Varna",
-            "information_text_1": "Varna is a city in Bulgaria",
-            "information_title_2": "Varna",
-            "information_text_2": "Varna is a city in Bulgaria",
-            "information_title_3": "Varna",
-            "information_text_3": "Varna is a city in Bulgaria",
             "name": "Козарника и Магурата",
             "description_first_half": "Пещерите Магурата и Козарника - извор на неизчерпаемо знание",
             "description_second_half": "Откритите артефакти променят хода на световната история"
@@ -56,12 +44,6 @@
     },
     "ancient_tooth":{
         "basic_information":{
-            "information_title_1": "",
-            "information_text_1": "Varna is a city in Bulgaria",
-            "information_title_2": "Varna",
-            "information_text_2": "Varna is a city in Bulgaria",
-            "information_title_3": "Varna",
-            "information_text_3": "Varna is a city in Bulgaria",
             "name": "Световна история",
             "description_first_half": "Праистория на Балканите",
             "description_second_half": "Факти, които доказват, че първите хора са обитавали териториите на Балканския полуостров"
@@ -82,12 +64,6 @@
     },
     "alphabet":{
         "basic_information":{
-            "information_title_1": "Varna",
-            "information_text_1": "Varna is a city in Bulgaria",
-            "information_title_2": "Varna",
-            "information_text_2": "Varna is a city in Bulgaria",
-            "information_title_3": "Varna",
-            "information_text_3": "Varna is a city in Bulgaria",
             "name": "Мистериите на България",
             "description_first_half": "Откритията,които пораждат въпроса коя е първата цивилизация",
             "description_second_half": "Плочките от Тартария,Градешница и Караново"
