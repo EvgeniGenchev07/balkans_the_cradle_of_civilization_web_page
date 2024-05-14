@@ -162,10 +162,7 @@
   document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
         const deltaY = event.key === 'ArrowDown' ? 100 : -100;
-        window.scrollBy({
-            top: deltaY,
-            behavior: 'smooth'
-        });
+        
         
         sectionAlphabet.scrollBy({
             top: deltaY,
