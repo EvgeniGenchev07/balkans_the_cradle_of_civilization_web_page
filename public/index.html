@@ -156,23 +156,7 @@
 </div>
 <!-- partial -->
 <script>
-  const sectionAlphabet = document.getElementById('alphabet');
-  const sectionVarna=document.getElementById('varna');
-
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
-        const deltaY = event.key === 'ArrowDown' ? 100 : -100;
-        sectionAlphabet.scrollBy({
-            top: deltaY,
-            behavior: 'smooth'
-        });
-
-        sectionVarna.scrollBy({
-            top: deltaY,
-            behavior: 'smooth'
-        });
-    }
-});
+  
 </script>
 <script src="integration.js"></script>
 <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>

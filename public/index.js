@@ -19,19 +19,28 @@ const special_paragraph_model=(name,data)=>`
                         <div class="overlay"></div>
                           <div id="${name}_map" class="content">${data}</div>
                       </article>`
-const button_functions =()=>{
-  document.querySelectorAll('.info-button').forEach(function(button) {
-    button.addEventListener('click', function() {
-        var btnTarget = this.getAttribute('data-target');
-        var infoBox = document.getElementById(btnTarget);
-        infoBox.classList.add('info-visible');
-    });
-});
-document.querySelectorAll('.close-btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-        var openInfoBox = this.closest('.info');
-        openInfoBox.classList.remove('info-visible');
-    });
+const scrollFunction = ()=>{
+  const sectionAlphabet = document.getElementById('alphabet');
+  const sectionVarna=document.getElementById('varna');
+  const sectionPrehistory=document.getElementById('ancient_tooth');
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+        const deltaY = event.key === 'ArrowDown' ? 100 : -100;
+        sectionAlphabet.scrollBy({
+            top: deltaY,
+            behavior: 'smooth'
+        });
+
+        sectionVarna.scrollBy({
+            top: deltaY,
+            behavior: 'smooth'
+        });
+        sectionPrehistory.scrollBy({
+          top: deltaY,
+          behavior: 'smooth'
+      });
+    }
 });
 }
 var maps = new Array();
@@ -75,7 +84,6 @@ const fetch_and_display= object_name=>{
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.second_paragraph));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',special_paragraph_model(object_name,page_data.special_paragraph));
     document.getElementById(object_name+'_row').insertAdjacentHTML('beforeend',paragraph_model(page_data.third_paragraph));
-    button_functions();
   });
 }
 fetch_and_display('ancient_tooth');
@@ -83,6 +91,7 @@ fetch_and_display('caves');
 fetch_and_display('varna');
 fetch_and_display('alphabet');
 createMaps();
+scrollFunction();
 document.getElementById('caves_anchor').addEventListener('click',()=>{
   removeMap();
   findAndAppendMap('caves_map','kozarnika_map')
