@@ -106,7 +106,7 @@
       <main-footer></main-footer>
     </section>
     
-    <section class="page face top" id="varna">
+    <section class="page face top" id="varna" tabindex="-1">
       <div class="act-table text-center">
         <div class="act-table-cell-ver-middle">
           
@@ -126,7 +126,7 @@
       <main-footer></main-footer>
     </section>
     <!--Contact-->
-    <section class="page face right" id="alphabet">
+    <section class="page face right" id="alphabet" tabindex="-1">
       <div class="act-table text-center">
         <div class="act-table-cell-ver-middle">
           <div class="jumbotron" id="alphabet_jumbotron" style="background:url(./assets/gradeshnica.jpg) center center no-repeat;
@@ -155,6 +155,30 @@
   </div>
 </div>
 <!-- partial -->
+<script>
+  const sectionAlphabet = document.getElementById('alphabet');
+  const sectionVarna=document.getElementById('varna');
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+        const deltaY = event.key === 'ArrowDown' ? 100 : -100;
+        window.scrollBy({
+            top: deltaY,
+            behavior: 'smooth'
+        });
+        
+        sectionAlphabet.scrollBy({
+            top: deltaY,
+            behavior: 'smooth'
+        });
+
+        sectionVarna.scrollBy({
+            top: deltaY,
+            behavior: 'smooth'
+        });
+    }
+});
+</script>
 <script src="integration.js"></script>
 <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 <script src="footer.js"></script>
