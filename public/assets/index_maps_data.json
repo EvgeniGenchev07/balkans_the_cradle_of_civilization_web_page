@@ -3,7 +3,7 @@
         {
             "class":"iframe-container",
             "id":"alphabet_place_map",
-            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11764.221152733466!2d25.903374762895577!3d42.51163303886372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a87cc7993602db%3A0xa00a014cd0e6020!2zODkzNCDQmtCw0YDQsNC90L7QstC-!5e0!3m2!1sbg!2sbg!4v1715108044285!5m2!1sbg!2sbg",
+            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7906.879821059969!2d25.906947383972526!3d42.512307202743024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a87cc7993602db%3A0xa00a014cd0e6020!2zODkzNCDQmtCw0YDQsNC90L7QstC-!5e1!3m2!1sbg!2sbg!4v1715770835143!5m2!1sbg!2sbg",
             "width":"600",
             "height":"450",
             "style":"border-radius:0px;"
@@ -11,7 +11,7 @@
         {
             "class":"iframe-container",
             "id":"ancient_tooth_place_map",
-            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8242694281776!2d22.6997508760022!3d43.65182437110221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47548deac930578f%3A0x2364ad23624b1463!2z0L_QtdGJ0LXRgNCwINCa0L7Qt9Cw0YDQvdC40LrQsA!5e0!3m2!1sbg!2sbg!4v1713811417416!5m2!1sbg!2sbg",
+            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180076.1469759949!2d24.938096260517103!3d42.10413308835414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a8223edc58faad%3A0xac235fe64eb593bc!2z0J_QsNC70LXQvtC90YLQvtC70L7Qs9C40YfQtdC9INC80YPQt9C10LkgItCT0LXQvNCwLdCh0LLRj9GCIiBNdXNldW0gb2YgcGFsZW9udG9sb2d5ICJHZW1hLXdvcmxkIg!5e1!3m2!1sbg!2sbg!4v1715770019327!5m2!1sbg!2sbg",
             "width":"450",
             "height":"450",
             "style":"border-radius:20px;"
@@ -19,7 +19,7 @@
         {
             "class":"iframe-container",
             "id":"magurata_map",
-            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8242694281776!2d22.6997508760022!3d43.65182437110221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47548deac930578f%3A0x2364ad23624b1463!2z0L_QtdGJ0LXRgNCwINCa0L7Qt9Cw0YDQvdC40LrQsA!5e0!3m2!1sbg!2sbg!4v1713811417416!5m2!1sbg!2sbg",
+            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.5452983229957!2d22.581568605643007!3d43.727092555135215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475489cebd879eab%3A0x68a50705733c2d4c!2z0J_QtdGJ0LXRgNCwINCc0LDQs9GD0YDQsA!5e1!3m2!1sbg!2sbg!4v1715770371047!5m2!1sbg!2sbg",
             "width":"450",
             "height":"450",
             "style":"border-radius:20px;"
@@ -27,7 +27,7 @@
         {
             "class":"iframe-container",
             "id":"kozarnika_map",
-            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.1924218438094!2d22.581421076006375!3d43.72732937109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475489cebd879eab%3A0x68a50705733c2d4c!2z0J_QtdGJ0LXRgNCwINCc0LDQs9GD0YDQsA!5e0!3m2!1sbg!2sbg!4v1713811330400!5m2!1sbg!2sbg",
+            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.986610263762!2d22.6997508760022!3d43.65182437110221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47548deac930578f%3A0x2364ad23624b1463!2z0L_QtdGJ0LXRgNCwINCa0L7Qt9Cw0YDQvdC40LrQsA!5e1!3m2!1sbg!2sbg!4v1715770221062!5m2!1sbg!2sbg",
             "width":"450",
             "height":"450",
             "style":"border-radius:20px;"
@@ -35,7 +35,7 @@
         {
             "class":"iframe-container",
             "id":"cemetry_varna_map",
-            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.099207719963!2d27.912388675977535!3d43.207408471126804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4540aeb382db9%3A0x395c9a0d7d2a940e!2z0JDRgNGF0LXQvtC70L7Qs9C40YfQtdGB0LrQuCDQvNGD0LfQtdC5LCDQktCw0YDQvdCwINCm0LXQvdGC0YrRgNCe0LTQtdGB0L7RgSwg0LHRg9C7LiDigJ7QmtC90Y_Qs9C40L3RjyDQnNCw0YDQuNGPINCb0YPQuNC30LDigJwgNDEsIDkwMDAg0JLQsNGA0L3QsA!5e0!3m2!1sbg!2sbg!4v1713989656298!5m2!1sbg!2sbg",
+            "src":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.2067026188993!2d27.91247047597754!3d43.20745657112678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4540aea000d77%3A0xba18c81360eacef7!2z0JDRgNGF0LXQvtC70L7Qs9C40YfQtdGB0LrQuCDQvNGD0LfQtdC5INCS0LDRgNC90LA!5e1!3m2!1sbg!2sbg!4v1715770789998!5m2!1sbg!2sbg",
             "width":"600",
             "height":"450",
             "style":"border-radius:0px;"

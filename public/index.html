@@ -154,9 +154,19 @@
     </section>
   </div>
 </div>
+<div id="message"></div>
 <!-- partial -->
 <script>
-  
+        function isAndroidOrIOS() {
+            return /Android|iPhone|iPad/i.test(navigator.userAgent);
+        }
+
+        window.onload = function() {
+            var messageElement = document.getElementById('message');
+            if (isAndroidOrIOS()) {
+                messageElement.textContent = 'Страницата е в процес на разработване!Отворете сайта на компютър.Благодарим за разбирането!';
+            }
+        }
 </script>
 <script src="integration.js"></script>
 <script async data-id="8674298786" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
