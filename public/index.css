@@ -759,11 +759,3 @@ header nav ul li:hover a {
   overflow: scroll;
 	}
 }
-#message{
-	text-align: center;
-	color: rgb(194, 15, 119);
-	font-size: medium;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
