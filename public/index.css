@@ -759,3 +759,8 @@ header nav ul li:hover a {
   overflow: scroll;
 	}
 }
+.message{
+	text-align: center;
+	color: white;
+	font-size: medium;
+}
