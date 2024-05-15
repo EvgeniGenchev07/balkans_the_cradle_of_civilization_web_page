@@ -761,6 +761,9 @@ header nav ul li:hover a {
 }
 #message{
 	text-align: center;
-	color: white;
+	color: rgb(194, 15, 119);
 	font-size: medium;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
